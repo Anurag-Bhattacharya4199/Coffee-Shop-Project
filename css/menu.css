@@ -1,13 +1,15 @@
+/*Header*/
 .coffee-header-img {
     width: 50px;
 }
-
 #title {
     font-size: 18px;
     font-weight: normal 400;
     color: #393939;
 }
 
+/*Menu Title and Menu Title Area*/
+/*Need to fix*/
 #menu-title {
     color: #FFF;
     background-color: #393939;
@@ -17,7 +19,6 @@
     font-weight: lighter 300;
     text-align: center;
 }
-
 #menu-title-area {
     background-image: url("/assets/coffee-circle.jpg");
     width: 100%;
@@ -26,11 +27,11 @@
     background-size: cover;
 }
 
+/*Menu Navigation*/
 #menu-nav {
     background-color: #393939;
     text-align: center;
 }
-
 #menu-nav-icons {
     list-style-type: none;
 }
