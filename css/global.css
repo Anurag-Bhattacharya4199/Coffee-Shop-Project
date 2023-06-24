@@ -2,3 +2,13 @@ body {
     font-family: 'Open Sans';
     font-weight: 400;
 }
+
+/*Header*/
+.coffee-header-img {
+    width: 50px;
+}
+#title {
+    font-size: 18px;
+    font-weight: normal 400;
+    color: #393939;
+}

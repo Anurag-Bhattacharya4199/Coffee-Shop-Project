@@ -1,22 +1,10 @@
-/*Header*/
-.coffee-header-img {
-    width: 50px;
-}
-#title {
-    font-size: 18px;
-    font-weight: normal 400;
-    color: #393939;
-}
-
-/*Menu Title and Menu Title Area*/
-/*Need to fix*/
 #menu-title {
     color: #FFF;
     background-color: #393939;
     width: 300px;
     height: 200px;
     font-size: 60px;
-    font-weight: lighter 300;
+    font-weight: 300;
     text-align: center;
 }
 #menu-title-area {
@@ -38,6 +26,45 @@
 .menu-nav-item a {
     color: #FFF;
     font-size: 21px;
-    font-weight: normal 400;
     text-decoration: none;
+}
+
+/*Hot Drinks and Pastries Menu*/
+.nitro-pink-background-menus {
+    background-color: #FFF0ED;
+}
+/*Cold Drinks Menu*/
+.light-gray-background-menu {
+    background-color: #F7F7f7;
+}
+
+/*Menu Item Titles*/
+div > h2 {
+    text-align: center;
+    font-weight: normal;
+    font-size: 60px;
+    font-weight: 300;   
+}
+
+/*Individual Menu Item Titles*/
+div > h3 {
+    text-align: center;
+    font-weight: normal;
+    font-size: 33px;
+    font-weight: 300;
+}
+
+/*Individual Menu Item Description*/
+.menu-item-description {
+    text-align: center;
+    font-style: italic;
+    font-size: 18px;
+    width: 500px;
+}
+
+/*Individual Menu Item Prices*/
+.menu-item-price {
+    text-align: center;
+    font-size: 18px;
+    color: #5BACC3
 }
