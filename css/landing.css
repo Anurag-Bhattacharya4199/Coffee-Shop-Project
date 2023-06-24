@@ -1,0 +1,23 @@
+#footer-header {
+    font-size: 33px;
+    font-weight: 300;
+}
+
+#button {
+    font-size: 21px;
+    background-color: #5BACC3;
+    color: c;
+}
+
+.products {
+    height: 280px;
+}
+
+#discount-text {
+    font-size: 45px;
+}
+#discount-banner {
+    width: 90%;
+    background-color: #393939;
+    color: white;
+}
