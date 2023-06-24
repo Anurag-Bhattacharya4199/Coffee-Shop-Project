@@ -12,3 +12,7 @@ body {
     font-weight: normal 400;
     color: #393939;
 }
+
+.menu-nav-icons {
+    list-style-type: none;
+}
