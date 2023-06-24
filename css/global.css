@@ -20,10 +20,12 @@ body {
 
 .nav-links {
     font-size: 21px;
+    list-style: none;
 }
 
 .p-texts {
     font-size: 18px;
+    color: #393939;
 }
 
 .icons {
