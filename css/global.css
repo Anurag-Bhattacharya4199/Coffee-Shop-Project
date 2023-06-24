@@ -2,3 +2,30 @@ body {
     font-family: 'Open Sans';
     font-weight: 400;
 }
+
+.h1-h2-titles {
+    font-size: 60px;
+    font-weight: 300;
+}
+
+.h3-titles {
+    font-size: 33px;
+    font-weight: 300;
+}
+
+.nav-heading {
+    font-size: 33px;
+    font-weight: 300;
+}
+
+.nav-links {
+    font-size: 21px;
+}
+
+.p-texts {
+    font-size: 18px;
+}
+
+.icons {
+    width: 50px;
+}
