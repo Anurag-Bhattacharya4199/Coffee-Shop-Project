@@ -1,19 +1,35 @@
+<!--Document Tyoe-->
 <!DOCTYPE html>
+
+<!--Website Language -->
 <html lang="en">
+
+<!--Head Section-->
 <head>
+    <!--Meta Data-->
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Google Fonts Stylesheet Link-->
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
+    <!--Webpage Title-->
     <title>Coffee Shop - Home</title>
+    <!--CSS Stylesheet Links-->
     <link rel="stylesheet" type="text/css" href="/css/global.css">
     <link rel="stylesheet" type="text/css" href="css/landing.css">
 </head>
+
+<!--Body Section-->
 <body>
-    <header>
+
+    <!--Header Section-->
+    <header class="nitro-pink-backgrounds">
+        <!--Website Main Logo-->
         <img class="icons" src="../assets/coffee-beans-logo-and-footer.svg">
+        <!--Website Main Title-->
         <div>
             <p class="p-texts">nitro</p>
         </div>
+        <!--Website Main Navigation-->
         <nav>
             <ul>
                 <li class="nav-links"><a href="">ABOUT</a></li>
@@ -22,52 +38,88 @@
             </ul>
         </nav>
     </header>
-    <div>
-        <h1>Nitro Coffee</h1>
-        <p>Cofee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain Cofee species</p>
-        <button>SHOP NOW</button>
-        <img alt="coffee bag">
+
+    <!--Nitro Coffee Description Section-->
+    <div class="nitro-pink-backgrounds">
+        <!--Nitro Coffee Description Section Title-->
+        <h1 class="h1-h2-titles">Nitro Coffee</h1>
+        <!--Nitro Coffee Description Section Text-->
+        <p class="p-texts">Cofee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain Cofee species</p>
+        <!--Shop Now Button-->
+        <button id="button">SHOP NOW</button>
+        <!--Coffee Beans Logo-->
+        <img alt="coffee bag" src="/assets/coffeebeans-hero.png" class="products">
     </div>
+
+    <!--Our Products Section-->
     <div>
-        <h2>Our Products</h2>
+        <!--Our Products Section Title-->
+        <h2 class="h1-h2-titles">Our Products</h2>
+        <!--Product Item-->
         <div>
-            <img alt="coffee beans">
-            <h3>Coffee Beans</h3>
+            <!--Product Item Image-->
+            <img alt="coffee beans" src="/assets/coffeebeans.png" class="products">
+            <!--Product Item Title-->
+            <h3 class="h3-titles">Coffee Beans</h3>
+            <!--Product Item Price-->
             <p class="menu-item-price">$18.99</p>
         </div>
+        <!--Product Item-->
         <div>
-            <img alt="cold brew">
-            <h3>Cold Brew</h3>
+            <!--Product Item Image-->
+            <img alt="cold brew" src="/assets/coldbrew.png" class="products">
+            <!--Product Item Title-->
+            <h3 class="h3-titles">Cold Brew</h3>
+            <!--Product Item Price-->
             <p class="menu-item-price">$4.99</p>
         </div>
+        <!--Product Item-->
         <div>
-            <img alt="in-house brew">
-            <h3>In-house Brew</h3>
+            <!--Product Item Image-->
+            <img alt="in-house brew" src="/assets/inhousebrew.png" class="products">
+            <!--Product Item Title-->
+            <h3 class="h3-titles">In-house Brew</h3>
+            <!--Product Item Price-->
             <p class="menu-item-price">$2.99</p>
         </div>
-        <button>VIEW ALL</button>
     </div>
-    <div>
-        <p>Get 20% off your first order with code: FirstNitro</p>
+
+    <!--VIEW All Button-->
+    <button id="button">VIEW ALL</button>
+
+    <!--Discount Section-->
+    <div id="discount-banner">
+        <!--Discount Section Title-->
+        <p id="discount-text">Get 20% off your first order with code: <span class="bolded-text">FirstNitro</span></id></p>
     </div>
-    <footer>
+
+    <!--Footer Section-->
+    <footer class="nitro-pink-backgrounds">
         <div>
-            <h3>Address</h3>
-            <p>503 Broadway Penthouse</p>
-            <p>New York</p>
+            <!--Address Section-->
+            <h3 class="footer-header">Address</h3>
+            <!--Address Section Information-->
+            <p class="p-texts">503 Broadway Penthouse</p>
+            <p class="p-texts">New York</p>
         </div>
+
         <div>
-            <h3>Hours</h3>
-            <p>Monday - Friday: 9am - 7pm</p>
-            <p>Saturday - Sunday: 10am - 5pm</p>
+            <!--Hours Section-->
+            <h3 class="footer-header">Hours</h3>
+            <!--Hours Section Information-->
+            <p><span class="bolded-text">Monday - Friday:</span> 9am - 7pm</p>
+            <p><span class="bolded-text">Saturday - Sunday:</span> 10am - 5pm</p>
         </div>
+
         <div>
-            <h3>Social</h3>
-            <img alt="facebook"><img alt="yelp"><img alt="instagram">
+            <!--Social Section-->
+            <h3 class="footer-header">Social</h3>
+            <!--Social Icons-->
+            <img alt="facebook" src="/assets/Facebook-Icon.svg" class="icons"><img alt="yelp" src="/assets/Yelp-Icon.svg" class="icons"><img alt="instagram" src="/assets/Instagram-Icon.svg" class="icons">
         </div>
+
     </footer>
     
-
-    
 </body>
+
 </html>

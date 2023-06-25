@@ -1,18 +1,22 @@
-#footer-header {
+/*Footer Header Styles*/
+.footer-header {
     font-size: 33px;
     font-weight: 300;
 }
 
+/*Button Styles*/
 #button {
     font-size: 21px;
     background-color: #5BACC3;
-    color: c;
+    color: #FFF;
 }
 
+/*Product Images Styles*/
 .products {
     height: 280px;
 }
 
+/*Discount Text Styles*/
 #discount-text {
     font-size: 45px;
 }
@@ -20,4 +24,16 @@
     width: 90%;
     background-color: #393939;
     color: white;
+    text-align: center;
+}
+
+/*Product Price Styles*/
+.menu-item-price {
+    font-size: 18px;
+    color: #5BACC3;
+}
+
+/*Bolded Text Styles*/
+.bolded-text {
+    font-weight: bold;
 }
