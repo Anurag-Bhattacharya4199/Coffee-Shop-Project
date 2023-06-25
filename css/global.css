@@ -1,33 +1,45 @@
+/*Whole Body Section Styles*/
 body {
     font-family: 'Open Sans';
     font-weight: 400;
 }
 
+/*Global Heading 1 and Heading 2 Styles*/
 .h1-h2-titles {
     font-size: 60px;
     font-weight: 300;
 }
 
+/*Global Heading 3 Styles*/
 .h3-titles {
     font-size: 33px;
     font-weight: 300;
 }
 
+/*Global Navigation Heading Styles*/
 .nav-heading {
     font-size: 33px;
     font-weight: 300;
 }
 
+/*Global Navigation Links Styles*/
 .nav-links {
     font-size: 21px;
     list-style: none;
 }
 
+/*Global Paragraph Text Styles*/
 .p-texts {
     font-size: 18px;
     color: #393939;
 }
 
+/*Global Icon Images Styles*/
 .icons {
     width: 50px;
+}
+
+/*Global Nitro Pink Sections Backgrounds Styles*/
+.nitro-pink-backgrounds {
+    background-color: #FFF0ED;
 }
