@@ -1,6 +1,6 @@
 /*Menu Webpage Title Styles*/
 #title-box {
-    width: 300px;
+    width: 32%;
     height: 200px;
     background-color: #393939;
 }
@@ -56,7 +56,7 @@
 /*Menu Item Description Styles*/
 .p-texts {
     font-style: italic;
-    width: 500px;
+    width: 35%;
 }
 .nitro-pink-backgrounds .p-texts, #light-gray-background .p-texts {
     text-align: center;
@@ -64,7 +64,7 @@
 
 /*Menu Item Price Styles*/
 .p-texts-price {
-    font-size: 18px;
+    font-size: 1em;
     color: #5BACC3;
     text-align: center;
 }
