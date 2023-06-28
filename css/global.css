@@ -6,37 +6,37 @@ body {
 
 /*Global Heading 1 and Heading 2 Styles*/
 .h1-h2-titles {
-    font-size: 60px;
+    font-size: 3.75em;
     font-weight: 300;
 }
 
 /*Global Heading 3 Styles*/
 .h3-titles {
-    font-size: 33px;
+    font-size: 2em;
     font-weight: 300;
 }
 
 /*Global Navigation Heading Styles*/
 .nav-heading {
-    font-size: 33px;
+    font-size: 2em;
     font-weight: 300;
 }
 
 /*Global Navigation Links Styles*/
 .nav-links {
-    font-size: 21px;
+    font-size: 1.3em;
     list-style: none;
 }
 
 /*Global Paragraph Text Styles*/
 .p-texts {
-    font-size: 18px;
+    font-size: 1.1em;
     color: #393939;
 }
 
 /*Global Icon Images Styles*/
 .icons {
-    width: 50px;
+    width: 3.5em;
 }
 
 /*Global Nitro Pink Sections Backgrounds Styles*/
