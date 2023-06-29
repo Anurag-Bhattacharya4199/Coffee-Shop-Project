@@ -16,6 +16,10 @@
     height: 280px;
 }
 
+.product-image {
+    height: 100%;
+}
+
 /*Discount Text Styles*/
 #discount-text {
     margin-top: 0em;
