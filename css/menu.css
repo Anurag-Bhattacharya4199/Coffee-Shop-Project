@@ -1,7 +1,7 @@
 /*Menu Webpage Title Styles*/
 #title-box {
     width: 32%;
-    height: 200px; /*Need to change to relative units*/
+    height: 200px;
     background-color: #393939;
 }
 
