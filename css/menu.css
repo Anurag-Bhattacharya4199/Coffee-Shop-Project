@@ -1,14 +1,14 @@
 /*Menu Webpage Title Styles*/
 #title-box {
     width: 32%;
-    height: 200px;
+    height: 200px; /*Need to change to relative units*/
     background-color: #393939;
 }
 
 /*Menu Webpage Title Background Image Styles*/
 #background-image {
     width: 100%;
-    height: 700px;
+    height: 700px; /*Need to change to relative units*/
     background-image: url(../assets/coffee-circle.jpg);
     background-position: center;
     background-size: cover;
