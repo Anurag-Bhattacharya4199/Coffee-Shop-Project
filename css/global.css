@@ -30,10 +30,21 @@ body {
     list-style: none;
 }
 
+.nav-links a {
+    text-decoration: none;
+    color: #393939;
+}
+
 /*Global Paragraph Text Styles*/
 .p-texts {
     font-size: 1.1em;
     color: #393939;
+    display: block;
+    margin: auto;
+}
+
+.shop-now a {
+    color: #5BACC3;
 }
 
 /*Global Icon Images Styles*/

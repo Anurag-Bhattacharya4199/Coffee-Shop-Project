@@ -1,8 +1,24 @@
+/*Notes:
+- Need to fix the spacing in main heading
+- Need to fix the spacing between border and label in sub-menu
+- Need to fix spacing between sections*/
+.child {
+    display: inline-block;
+    margin: 20px;
+    padding: 20px;
+}
+
+header {
+    background-color: #FFF0ED;
+}
+
 /*Menu Webpage Title Styles*/
 #title-box {
     width: 32%;
     height: 200px;
     background-color: #393939;
+    display: block;
+    margin: auto;
 }
 
 /*Menu Webpage Title Background Image Styles*/
@@ -15,17 +31,23 @@
     background-size: cover;
 }
 
-/*Sub-Navigation Styles*/
-#sub-nav {
-    width: 100%;
-    background-color: #393939;
-    color: #393939;
-}
-
 /*Menu Title Styles*/
 .h1-h2-titles {
     color: #FFF;
     text-align: center;
+    display: block;
+    margin: auto;
+}
+
+
+/*Sub-Navigation Styles*/
+#sub-nav {
+    width: 100%;
+    height: 80px;
+    background-color: #393939;
+    color: #FFF;
+    padding: 20px;
+    margin: 20px;
 }
 
 /*Sub-Navigation Menu Styles*/
@@ -37,6 +59,7 @@
 #sub-nav .nav-links a {
     color: #FFF;
     text-decoration: none;
+    border-left: 4px solid #5BACC3;
 }
 
 /*Menu Headings Styles*/
