@@ -1,22 +1,15 @@
-/*Notes:
-- Need to fix the spacing in main heading
-- Need to fix the spacing between border and label in sub-menu
-- Need to fix spacing between sections*/
-
 /*Header Styles*/
-.child {
-    display: inline-block;
-    margin: 20px;
-    padding: 20px;
-}
-
 header {
     background-color: #FFF0ED;
+    display: inline-block;
+    width: 100%;
+    height: 5rem;
+    margin: auto;
 }
 
 /*Menu Webpage Title Styles*/
 #title-box {
-    width: 32%;
+    width: 300px;
     height: 200px;
     background-color: #393939;
     display: block;
@@ -27,7 +20,6 @@ header {
 #background-image {
     width: 100%;
     height: 700px;
-    /*Need to change to relative units*/
     background-image: url(../assets/coffee-circle.jpg);
     background-position: center;
     background-size: cover;
@@ -41,33 +33,35 @@ header {
     margin: auto;
 }
 
-
-/*Sub-Navigation Styles*/
-#sub-nav {
+/*Sub-Navigation Menu Styles*/
+#sub-nav-menu {
     width: 100%;
     height: 80px;
     background-color: #393939;
-    color: #FFF;
-    padding: 20px;
-    margin: 20px;
-}
-
-/*Sub-Navigation Menu Styles*/
-#sub-nav-menu {
     text-align: center;
 }
 
+.nav-links.sub-nav-link {
+    border-left: 4px solid #5BACC3;
+    margin: 20px;
+}
+
 /*Sub-Navigation Menu Links Styles*/
-#sub-nav .nav-links a {
+#sub-nav-menu .nav-links a {
     color: #FFF;
     text-decoration: none;
-    border-left: 4px solid #5BACC3;
 }
+
+.nav-links a {
+    padding: 20px;
+}
+
 
 /*Menu Headings Styles*/
 .nitro-pink-backgrounds .h1-h2-titles,
 #light-gray-background .h1-h2-titles {
     color: #393939;
+    padding-bottom: 20px;
 }
 
 /*Menu Items Styles*/
@@ -75,6 +69,7 @@ header {
 #light-gray-background .h3-titles {
     text-align: center;
     color: #393939;
+    padding-bottom: 20px;
 }
 
 /*Cold Drinks Section Styles*/
@@ -85,7 +80,7 @@ header {
 /*Menu Item Description Styles*/
 .p-texts {
     font-style: italic;
-    width: 35%;
+    width: 50%;
 }
 
 .nitro-pink-backgrounds .p-texts,
@@ -98,4 +93,5 @@ header {
     font-size: 1em;
     color: #5BACC3;
     text-align: center;
+    padding-bottom: 20px;
 }

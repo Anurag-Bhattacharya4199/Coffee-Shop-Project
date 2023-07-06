@@ -1,9 +1,15 @@
 /*Whole Body Section Styles*/
-body {
+* {
     font-family: 'Open Sans';
     font-weight: 400;
     margin: 0px;
     padding: 0px;
+}
+
+/*Main Logo Styles*/
+.main-logo {
+    width: 50px;
+    vertical-align: middle;
 }
 
 /*Global Heading 1 and Heading 2 Styles*/
@@ -18,16 +24,24 @@ body {
     font-weight: 300;
 }
 
+/*Main Navigation Styles*/
+.main-navigation {
+    display: inline-block;
+    margin: 20px;
+}
+
 /*Global Navigation Heading Styles*/
 .nav-heading {
     font-size: 2em;
     font-weight: 300;
+    display: inline-block;
 }
 
 /*Global Navigation Links Styles*/
 .nav-links {
     font-size: 1.3em;
     list-style: none;
+    display: inline-block;
 }
 
 .nav-links a {
@@ -43,6 +57,7 @@ body {
     margin: auto;
 }
 
+/*Special Main Navigation Heading Styles*/
 .shop-now a {
     color: #5BACC3;
 }
