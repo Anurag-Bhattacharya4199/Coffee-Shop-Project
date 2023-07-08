@@ -1,12 +1,3 @@
-/*Header Styles*/
-header {
-    background-color: #FFF0ED;
-    display: inline-block;
-    width: 100%;
-    height: 5rem;
-    margin: auto;
-}
-
 /*Menu Webpage Title Styles*/
 #title-box {
     width: 300px;
@@ -51,11 +42,6 @@ header {
     color: #FFF;
     text-decoration: none;
 }
-
-.nav-links a {
-    padding: 20px;
-}
-
 
 /*Menu Headings Styles*/
 .nitro-pink-backgrounds .h1-h2-titles,
