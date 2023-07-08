@@ -7,17 +7,47 @@ header {
     margin: auto;
 }
 
+.heading-content {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.section1-content {
+    width: 30%;
+    align-items: flex-start;
+}
+
+.section1-content-image {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+}
+
+.h1-h2-titles {
+    margin-bottom: 20px;
+}
+
+.p-texts {
+    margin-bottom: 20px;
+}
+
 /*Footer Header Styles*/
 .footer-header {
     font-size: 2em;
     font-weight: 300;
+    margin: 20px;
 }
 
 /*Button Styles*/
 #button {
+    width: 180px;
     font-size: 1.3em;
     background-color: #5BACC3;
     color: #FFF;
+    padding: 20px;
 }
 
 /*Product Images Styles*/
@@ -31,16 +61,13 @@ header {
 
 /*Discount Text Styles*/
 #discount-text {
-    margin-top: 0em;
     font-size: 3em;
+    color: #FFF;
 }
 
 #discount-banner {
     width: 90%;
     background-color: #393939;
-    color: #FFF;
-    text-align: center;
-    margin-top: 0em;
 }
 
 /*Product Price Styles*/
@@ -52,4 +79,15 @@ header {
 /*Bolded Text Styles*/
 .bolded-text {
     font-weight: bold;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    margin-left: 100px;
+}
+
+.footer-content-card {
+    margin: 20px;
 }
