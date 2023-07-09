@@ -7,12 +7,19 @@ header {
     margin: auto;
 }
 
-.heading-content {
+.header-content {
     display: flex;
     flex-direction: row;
     align-items: center;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+
+/*Header Content Styles*/
+.header-content__title {
+    font-size: 3.75em;
+    font-weight: 300;
+    margin-bottom: 20px;
 }
 
 .section1-content {
@@ -24,35 +31,12 @@ header {
     display: flex;
     flex-direction: column-reverse;
     align-items: flex-end;
+
 }
 
-.h1-h2-titles {
-    margin-bottom: 20px;
-}
-
-.p-texts {
-    margin-bottom: 20px;
-}
-
-/*Footer Header Styles*/
-.footer-header {
-    font-size: 2em;
-    font-weight: 300;
-    margin: 20px;
-}
-
-/*Button Styles*/
-#button {
-    width: 180px;
-    font-size: 1.3em;
-    background-color: #5BACC3;
-    color: #FFF;
-    padding: 20px;
-}
-
+/*Product Title Styles*/
 .h1-h2-titles {
     text-align: center;
-    margin-bottom: 0px;
 }
 
 .product-title {
@@ -60,6 +44,21 @@ header {
     background-color: #F7F7F7;
 }
 
+/*Product Description Styles*/
+.p-texts {
+    margin-bottom: 20px;
+}
+
+/*Button Styles*/
+.header-content__button {
+    width: 180px;
+    font-size: 1.3em;
+    background-color: #5BACC3;
+    color: #FFF;
+    padding: 20px;
+}
+
+/*View All Button Styles*/
 .view-all-button {
     display: flex;
     justify-content: center;
@@ -70,19 +69,19 @@ header {
     background-color: #F7F7F7;
 }
 
-.produuct-section {
-    height: 5rem;
-}
-
-/*Product Images Styles*/
-.products {
-    height: 280px;
-}
-
-.products-wrapper {
-    background-color: #F7F7F7;
+/*Product Section Styles*/
+.product-section__wrapper {
     display: flex;
     justify-content: center;
+}
+
+.products {
+    height: 280px;
+    margin: 20px;
+}
+
+.product-section {
+    background-color: #F7F7F7;
 }
 
 .product-item {
@@ -96,7 +95,12 @@ header {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+}
 
+/*Product Price Styles*/
+.product-section__productPrice {
+    font-size: 1.1em;
+    color: #5BACC3;
 }
 
 .h3-titles {
@@ -108,11 +112,6 @@ header {
 }
 
 /*Discount Text Styles*/
-#discount-text {
-    font-size: 3em;
-    color: #FFF;
-}
-
 .discount-wrapper {
     display: flex;
     justify-content: center;
@@ -120,7 +119,7 @@ header {
     height: 500px;
 }
 
-#discount-banner {
+#discount-wrapper__discountBanner {
     width: 90%;
     height: 25%;
     background-color: #393939;
@@ -131,24 +130,38 @@ header {
     align-items: center;
 }
 
-/*Product Price Styles*/
-.menu-item-price {
-    font-size: 1.1em;
-    color: #5BACC3;
+#discount-wrapper__discount-text {
+    font-size: 3em;
+    color: #FFF;
 }
 
-/*Bolded Text Styles*/
-.bolded-text {
+#discount-wrapper__bolded-text {
     font-weight: bold;
 }
 
-.footer-content {
+/*Footer Styles*/
+.footer-section_footer-header {
+    font-size: 2em;
+    font-weight: 300;
+    margin: 20px;
+}
+
+.footer-section__footer-content {
     display: flex;
     flex-direction: row;
     align-items: flex-start;
-    margin-left: 100px;
+    width: 100%;
 }
 
-.footer-content-card {
+.footer-section__footer-card {
     margin: 20px;
+    width: 250px;
+}
+
+#footer-section__bolded-text {
+    font-weight: bold;
+}
+
+.footer-section_icons {
+    width: 3.5em;
 }
