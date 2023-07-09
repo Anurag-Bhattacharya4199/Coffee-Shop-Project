@@ -82,6 +82,7 @@ Description: This is the Landing Page Style Sheet - All Styles are applied uniqu
 .product-section__wrapper {
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 
 /*Product Items Styles*/
@@ -99,19 +100,19 @@ Description: This is the Landing Page Style Sheet - All Styles are applied uniqu
 }
 
 /*Product Image Section Wrapper Styles*/
-.product-sectionProductImage-wrapper {
+.product-sectionProductText-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
     height: 280px;
-    margin: 20px;
+    margin: 10px;
 }
 
 /*Product Image Styles*/
-.product-section_productImage {
-    height: 100%;
-}
-
-/*Product Name Styles*/
-.h3-titles {
-    margin: 20px;
+.product-section__productImage {
+    height: 70%;
+    margin: 10px;
 }
 
 /*Product Price Styles*/
@@ -182,13 +183,13 @@ Description: This is the Landing Page Style Sheet - All Styles are applied uniqu
     flex-direction: row;
     align-items: flex-start;
     width: 100%;
-    margin: 100px;
+    margin-left: 100px;
 }
 
 /*Footer Cards Styles*/
 .footer-section__footer-card {
-    margin: 20px;
     width: 250px;
+    margin: 20px;
 }
 
 /*Footer Titles Styles*/
