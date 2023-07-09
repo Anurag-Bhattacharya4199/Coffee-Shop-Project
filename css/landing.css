@@ -1,5 +1,5 @@
-/*Header Styles*/
-header {
+/*Header Section Styles*/
+.header-section {
     background-color: #FFF0ED;
     display: inline-block;
     width: 100%;
@@ -7,7 +7,9 @@ header {
     margin: auto;
 }
 
+/*Header Content Styles*/
 .header-content {
+    background-color: #FFF0ED;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -15,41 +17,26 @@ header {
     justify-content: space-evenly;
 }
 
-/*Header Content Styles*/
+/*Header Content Wrapper Styles*/
+.header-content__descriptionWrapper {
+    display: flex;
+    flex-direction: column;
+    width: 25%;
+}
+
+/*Header Content Title Styles*/
 .header-content__title {
     font-size: 3.75em;
     font-weight: 300;
     margin-bottom: 20px;
 }
 
-.section1-content {
-    width: 30%;
-    align-items: flex-start;
-}
-
-.section1-content-image {
-    display: flex;
-    flex-direction: column-reverse;
-    align-items: flex-end;
-
-}
-
-/*Product Title Styles*/
-.h1-h2-titles {
-    text-align: center;
-}
-
-.product-title {
-    padding: 20px;
-    background-color: #F7F7F7;
-}
-
-/*Product Description Styles*/
+/*Header Content Text Styles*/
 .p-texts {
     margin-bottom: 20px;
 }
 
-/*Button Styles*/
+/*Header Content Button Styles*/
 .header-content__button {
     width: 180px;
     font-size: 1.3em;
@@ -58,33 +45,39 @@ header {
     padding: 20px;
 }
 
-/*View All Button Styles*/
-.view-all-button {
+/*Header Content Image Styles*/
+.header-contentImage {
     display: flex;
-    justify-content: center;
-    margin-top: 0px;
-    margin-bottom: 20px;
-    padding: 20px;
-    width: 100%;
-    background-color: #F7F7F7;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+
+}
+
+.header-content__product {
+    height: 280px;
+    margin: 20px;
 }
 
 /*Product Section Styles*/
+.product-section {
+    background-color: #F7F7F7;
+}
+
+/*Product Section Title Styles*/
+.h1-h2-titles {
+    text-align: center;
+    padding: 20px;
+    background-color: #F7F7F7;
+}
+
+/*Product Section Wrapper Styles*/
 .product-section__wrapper {
     display: flex;
     justify-content: center;
 }
 
-.products {
-    height: 280px;
-    margin: 20px;
-}
-
-.product-section {
-    background-color: #F7F7F7;
-}
-
-.product-item {
+/*Product Items Styles*/
+.product-section__productItem {
     width: 330px;
     height: 440px;
     padding: 20px;
@@ -97,21 +90,49 @@ header {
     align-items: center;
 }
 
+/*Product Image Section Wrapper Styles*/
+.product-sectionProductImage-wrapper {
+    height: 280px;
+    margin: 20px;
+}
+
+/*Product Image Styles*/
+.product-section_productImage {
+    height: 100%;
+}
+
+/*Product Name Styles*/
+.h3-titles {
+    margin: 20px;
+}
+
 /*Product Price Styles*/
 .product-section__productPrice {
     font-size: 1.1em;
     color: #5BACC3;
 }
 
-.h3-titles {
-    margin: 20px;
+/*Product View All Button Wrapper Styles*/
+.product-section__viewAllButton-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    padding: 20px;
+    width: 100%;
+    background-color: #F7F7F7;
 }
 
-.product-image {
-    height: 100%;
+/*Product View All Button Styles*/
+.product-section__viewAllButton {
+    width: 180px;
+    font-size: 1.3em;
+    background-color: #5BACC3;
+    color: #FFF;
+    padding: 20px;
 }
 
-/*Discount Text Styles*/
+/*Discount Section Wrapper*/
 .discount-wrapper {
     display: flex;
     justify-content: center;
@@ -119,6 +140,7 @@ header {
     height: 500px;
 }
 
+/*Discount Banner Styles*/
 #discount-wrapper__discountBanner {
     width: 90%;
     height: 25%;
@@ -130,22 +152,23 @@ header {
     align-items: center;
 }
 
+/*Discount Text Styles*/
 #discount-wrapper__discount-text {
     font-size: 3em;
     color: #FFF;
 }
 
+/*Discount Text - Special Case*/
 #discount-wrapper__bolded-text {
     font-weight: bold;
 }
 
-/*Footer Styles*/
-.footer-section_footer-header {
-    font-size: 2em;
-    font-weight: 300;
-    margin: 20px;
+/*Footer Section Styles*/
+.footer-section {
+    background-color: #FFF0ED;
 }
 
+/*Footer Content Styles*/
 .footer-section__footer-content {
     display: flex;
     flex-direction: row;
@@ -153,15 +176,25 @@ header {
     width: 100%;
 }
 
+/*Footer Cards Styles*/
 .footer-section__footer-card {
     margin: 20px;
     width: 250px;
 }
 
+/*Footer Titles Styles*/
+.footer-section_footer-header {
+    font-size: 2em;
+    font-weight: 300;
+    margin: 20px;
+}
+
+/*Footer Special Case Bolded Text Styles*/
 #footer-section__bolded-text {
     font-weight: bold;
 }
 
+/*Footer Section Icons Styles*/
 .footer-section_icons {
     width: 3.5em;
 }
