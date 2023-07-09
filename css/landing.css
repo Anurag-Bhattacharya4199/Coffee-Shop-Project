@@ -99,7 +99,7 @@ Description: This is the Landing Page Style Sheet - All Styles are applied uniqu
     align-items: center;
 }
 
-/*Product Image Section Wrapper Styles*/
+/*Product Text Section Wrapper Styles*/
 .product-sectionProductText-wrapper {
     display: flex;
     flex-direction: column;
