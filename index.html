@@ -22,7 +22,9 @@ Description: This is the Landing Page HTML Document - This Document renders the 
     <!--Webpage Title-->
     <title>Coffee Shop - Home</title>
     <!--CSS Stylesheet Links-->
+    <!--Global Styles Link-->
     <link rel="stylesheet" type="text/css" href="/css/global.css">
+    <!--Landing Page Styles Link-->
     <link rel="stylesheet" type="text/css" href="css/landing.css">
 </head>
 
@@ -31,14 +33,14 @@ Description: This is the Landing Page HTML Document - This Document renders the 
     <!--Header Section-->
     <header class="header-section">
         <!--Main Logo-->
-        <img src="../assets/coffee-beans-logo-and-footer.svg" alt="coffee-beans-logo" class="header-section__main-logo main-logo"/>
+        <a href="../index.html"><img src="../assets/coffee-beans-logo-and-footer.svg" alt="coffee-beans-logo" class="main-logo"/></a>
         <!--Header Title-->
         <p class="header-section__mainHeading nav-heading">nitro</p>
         <!--Main Navigation-->
         <ul class="header-section__mainNavigation main-navigation">
-            <li class="header-section__navLinks nav-links"><a href="../index.html">ABOUT</a></li>
-            <li class="header-section__navLinks nav-links"><a href="./menu.html">MENU</a></li>
-            <li class="header-section__navLinks nav-links shop-now"><a href="./menu.html">SHOP NOW</a></li>
+            <li class="header-section__navLinks nav-links"><a href="index.html">ABOUT</a></li>
+            <li class="header-section__navLinks nav-links"><a href="/pages/menu.html">MENU</a></li>
+            <li class="header-section__navLinks nav-links shop-now"><a href="/pages/menu.html">SHOP NOW</a></li>
         </ul>
     </header>
 
@@ -113,7 +115,7 @@ Description: This is the Landing Page HTML Document - This Document renders the 
 
     <!--Footer Section-->
     <footer class="footer-section">
-        <!--Foooter Content-->
+        <!--Footer Content-->
         <div class="footer-section__footer-content">
             <!--Address Section-->
             <div class="footer-section__footer-card">
@@ -129,9 +131,9 @@ Description: This is the Landing Page HTML Document - This Document renders the 
             <!--Social Section-->
             <div class="footer-section__footer-card">
                 <div class="footer-section_footer-header">Socials</div>
-                <img src="./assets/Facebook-Icon.svg" alt="FB Logo" class="footer-section_icons">
-                <img src="./assets/Yelp-Icon.svg" alt="Yelp Logo" class="footer-section_icons">
-                <img src="./assets/Instagram-Icon.svg" alt="Instagram Logo" class="footer-section_icons">
+                <a href="https://www.facebook.com/"><img src="./assets/Facebook-Icon.svg" alt="FB Logo" class="footer-section_icons"></a>
+                <a href="https://www.yelp.com/"><img src="./assets/Yelp-Icon.svg" alt="Yelp Logo" class="footer-section_icons"></a>
+                <a href="https://www.instagram.com/"><img src="./assets/Instagram-Icon.svg" alt="Instagram Logo" class="footer-section_icons"></a>
             </div>
         </div>
     </footer>
