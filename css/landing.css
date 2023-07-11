@@ -109,6 +109,12 @@ CSS Concept Used: Relative Units, CSS Display, CSS Box Model, CSS Flexbox and BE
     width: 100%;
 }
 
+.product-section__ProductInformation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 /*Product Image Styles*/
 .product-section__productImage {
     height: 70%;
@@ -121,7 +127,9 @@ CSS Concept Used: Relative Units, CSS Display, CSS Box Model, CSS Flexbox and BE
 
 /*Product Price Styles*/
 .product-section__productPrice {
+    margin-left: 20px;
     font-size: 1.1em;
+    font-weight: bold;
     color: #5BACC3;
 }
 
