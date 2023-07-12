@@ -5,6 +5,20 @@ Description: This is the Landing Page Style Sheet - All Styles are applied uniqu
 CSS Concept Used: Relative Units, CSS Display, CSS Box Model, CSS Flexbox
 */
 
+/*Header Section Styles*/
+.header-section {
+    background-color: #FFF0ED;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 5rem;
+    margin: auto;
+}
+
+.header-section__mainNavigation {
+    margin: 20px;
+}
+
 /*Menu Webpage Title Styles*/
 #title-box {
     width: 300px;

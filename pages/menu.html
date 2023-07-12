@@ -32,22 +32,28 @@ HTML Concepts: Standard HTML Concepts
   <!--Body Section-->
   <body>
     <!--Header Section-->
-    <header>
-      <!--Main Logo-->
-      <a href="../index.html"
-        ><img
-          src="../assets/coffee-beans-logo-and-footer.svg"
-          alt="coffee-beans-logo"
-          class="main-logo"
-      /></a>
-      <!--Main Header Text-->
-      <p class="nav-heading">nitro</p>
+    <header class="header-section">
+      <div class="header-section__header-text">
+        <!--Main Logo-->
+        <a href="./index.html"
+          ><img
+            src="../assets/coffee-beans-logo-and-footer.svg"
+            alt="coffee-beans-logo"
+            class="main-logo"
+        /></a>
+        <!--Header Title-->
+        <p class="header-section__mainHeading nav-heading">nitro</p>
+      </div>
       <!--Main Navigation-->
-      <ul class="main-navigation">
-        <li class="nav-links"><a href="../index.html">ABOUT</a></li>
-        <li class="nav-links"><a href="./menu.html">MENU</a></li>
-        <li class="nav-links shop-now">
-          <a href="./menu.html">SHOP NOW</a>
+      <ul class="header-section__mainNavigation">
+        <li class="header-section__navLinks nav-links">
+          <a href="./index.html">ABOUT</a>
+        </li>
+        <li class="header-section__navLinks nav-links">
+          <a href="./pages/menu.html">MENU</a>
+        </li>
+        <li class="header-section__navLinks nav-links shop-now">
+          <a href="./pages/menu.html">SHOP NOW</a>
         </li>
       </ul>
     </header>
