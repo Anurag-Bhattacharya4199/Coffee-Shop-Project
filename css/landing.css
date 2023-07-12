@@ -161,9 +161,63 @@ CSS Concept Used: Relative Units, CSS Display, CSS Box Model, CSS Flexbox and BE
 /*Discount Section Wrapper*/
 .discount-wrapper {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
     height: 500px;
+    margin: 20px;
+}
+
+.discount-wrapper__promotionsSection {
+    margin: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.discount-wrapper__promotionsTitle {
+    font-size: 3.75em;
+    font-weight: 300;
+    margin: 20px;
+}
+
+.discount-wrapper__promotionsText {
+    font-size: 1.1em;
+    color: #393939;
+    margin: 20px;
+}
+
+.discount-wrapper__promotionsImage {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    padding: 20px;
+    margin: 20px;
+}
+
+.discount-wrapper__promotionsIcons {
+    width: 3.5em
+}
+
+
+.discount-wrapper__promotionsButton {
+    width: 180px;
+    font-size: 1.3em;
+    background-color: #5BACC3;
+    color: #FFF;
+    padding: 20px;
+}
+
+.discount-wrapper__promotionsBackgroundImage {
+    width: 400px;
+    padding: 20px;
+    margin: 20px;
+    background-image: url(../assets/coldbrewbackground.png);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 /*Discount Banner Styles*/
@@ -192,6 +246,7 @@ CSS Concept Used: Relative Units, CSS Display, CSS Box Model, CSS Flexbox and BE
 /*Footer Section Styles*/
 .footer-section {
     background-color: #FFF0ED;
+    margin-top: 20px;
 }
 
 /*Footer Content Styles*/
