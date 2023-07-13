@@ -5,6 +5,7 @@ Description: This is the Landing Page Style Sheet - All Styles are applied uniqu
 CSS Concept Used: Relative Units, CSS Display, CSS Box Model, CSS Flexbox and BEM Concept
 */
 
+
 /*Header Section Styles*/
 .header-section {
     background-color: #FFF0ED;
@@ -189,9 +190,8 @@ CSS Concept Used: Relative Units, CSS Display, CSS Box Model, CSS Flexbox and BE
 
 .discount-wrapper__promotionsImage {
     display: flex;
-    justify-content: space-evenly;
+    gap: 20px;
     align-items: flex-start;
-    padding: 20px;
     margin: 20px;
 }
 
@@ -199,6 +199,9 @@ CSS Concept Used: Relative Units, CSS Display, CSS Box Model, CSS Flexbox and BE
     width: 3.5em
 }
 
+.discount-wrapper__promotionsButton-wrapper {
+    padding-left: 20px;
+}
 
 .discount-wrapper__promotionsButton {
     width: 180px;
@@ -254,8 +257,9 @@ CSS Concept Used: Relative Units, CSS Display, CSS Box Model, CSS Flexbox and BE
     display: flex;
     flex-direction: row;
     align-items: flex-start;
+    justify-content: space-evenly;
     width: 100%;
-    margin-left: 100px;
+    margin-left: 10px;
 }
 
 /*Footer Cards Styles*/
