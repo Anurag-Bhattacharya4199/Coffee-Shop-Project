@@ -165,7 +165,7 @@ CSS Concept Used: Relative Units, CSS Display, CSS Box Model, CSS Flexbox and BE
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 500px;
+    height: fit-content;
     margin: 20px;
 }
 
@@ -226,10 +226,11 @@ CSS Concept Used: Relative Units, CSS Display, CSS Box Model, CSS Flexbox and BE
 /*Discount Banner Styles*/
 #discount-wrapper__discountBanner {
     width: 90%;
-    height: 25%;
+    height: fit-content;
     background-color: #393939;
     padding: 20px;
-    margin: 20px;
+    margin-top: 150px;
+    margin-bottom: 150px;
     display: flex;
     justify-content: center;
     align-items: center;
