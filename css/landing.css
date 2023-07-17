@@ -58,6 +58,13 @@ CSS Concept Used: Relative Units, CSS Display, CSS Box Model, CSS Flexbox and BE
     padding: 20px;
 }
 
+.header-content__buttonsurrounding {
+    position: relative;
+    bottom: 200px;
+    width: 180px;
+    border: 2px #393939 solid;
+}
+
 /*Header Content Image Styles*/
 .header-contentImage {
     display: flex;
@@ -157,6 +164,14 @@ CSS Concept Used: Relative Units, CSS Display, CSS Box Model, CSS Flexbox and BE
     background-color: #5BACC3;
     color: #FFF;
     padding: 20px;
+}
+
+.product-section__viewAllButtonSurrounding {
+    position: relative;
+    right: 190px;
+    bottom: 10px;
+    width: 180px;
+    border: 2px #393939 solid;
 }
 
 /*Discount Section Wrapper*/
