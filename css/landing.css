@@ -59,6 +59,15 @@ CSS Concept Used: Relative Units, CSS Display, CSS Box Model, CSS Flexbox and BE
     padding: 20px;
 }
 
+.header-content__button-surrounding {
+    position: relative;
+    width: 180px;
+    height: 72px;
+    left: -10px;
+    bottom: 80px;
+    border: 2px #393939 solid;
+}
+
 /*Header Content Image Styles*/
 .header-contentImage {
     display: flex;
