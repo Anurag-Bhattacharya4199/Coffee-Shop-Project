@@ -149,23 +149,27 @@ CSS Concept Used: Relative Units, CSS Display, CSS Box Model, CSS Flexbox and BE
     padding: 20px;
     width: 100%;
     background-color: #F7F7F7;
+    position: absolute;
+}
+
+.product-section__viewAllButton-surrounding-border {
+    position: relative;
+    width: 180px;
+    height: 72px;
+    left: 680px;
+    top: 10px;
+    bottom: 10px;
+    border: 2px solid black;
 }
 
 /*Product View All Button Styles*/
 .product-section__viewAllButton {
     width: 180px;
+    height: 72px;
     font-size: 1.3em;
     background-color: #5BACC3;
     color: #FFF;
     padding: 20px;
-}
-
-.product-section__viewAllButtonSurrounding {
-    position: relative;
-    right: 190px;
-    bottom: 10px;
-    width: 180px;
-    border: 2px #393939 solid;
 }
 
 /*Discount Section Wrapper*/
@@ -220,6 +224,15 @@ CSS Concept Used: Relative Units, CSS Display, CSS Box Model, CSS Flexbox and BE
     padding: 20px;
 }
 
+.discount-wrapper__surrounding-border {
+    position: relative;
+    width: 180px;
+    height: 72px;
+    left: 10px;
+    bottom: 80px;
+    border: 2px #393939 solid;
+}
+
 .discount-wrapper__promotionsBackgroundImage {
     width: 400px;
     padding: 20px;
@@ -230,6 +243,16 @@ CSS Concept Used: Relative Units, CSS Display, CSS Box Model, CSS Flexbox and BE
     display: flex;
     justify-content: center;
     align-items: center;
+}
+
+.discount-wrapper__bgsurrounding-border {
+    position: relative;
+    width: 400px;
+    height: 350px;
+    left: -390px;
+    top: -20px;
+    bottom: 50px;
+    border: 5px #5BACC3 solid
 }
 
 /*Discount Banner Styles*/
