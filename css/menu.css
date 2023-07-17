@@ -19,8 +19,19 @@ CSS Concept Used: Relative Units, CSS Display, CSS Box Model, CSS Flexbox
     margin: 20px;
 }
 
+.surrounding-title-box {
+    position: relative;
+    right: 15px;
+    bottom: 15px;
+    width: 300px;
+    height: 200px;
+    border: solid 5px #5BACC3;
+}
+
 /*Menu Webpage Title Styles*/
 .title-box {
+    display: flex;
+    position: absolute;
     width: 300px;
     height: 200px;
     background-color: #393939;
