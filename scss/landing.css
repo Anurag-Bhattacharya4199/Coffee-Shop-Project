@@ -1,0 +1,425 @@
+/*
+Project Name: Coffee Shop - Sprint 1
+Name: Anurag Bhattacharya
+Description: This is the Landing Page Style Sheet - All Styles are applied uniquely to the Landing Page
+CSS Concept Used: Relative Units, CSS Display, CSS Box Model, CSS Flexbox
+*/
+/*Whole Body Section Styles*/
+* {
+  font-family: "Open Sans";
+  font-weight: 400;
+  margin: 0px;
+  padding: 0px;
+}
+
+/*Header Styles*/
+header {
+  background-color: #FFF0ED;
+  display: inline-block;
+  width: 100%;
+  height: 5rem;
+  margin: auto;
+}
+
+/*Main Logo Styles*/
+.main-logo {
+  width: 50px;
+  vertical-align: middle;
+}
+
+/*Global Heading 1 and Heading 2 Styles*/
+.h1-h2-titles {
+  font-size: 3.75em;
+  font-weight: 300;
+}
+
+/*Global Heading 3 Styles*/
+.h3-titles {
+  font-size: 2em;
+  font-weight: 300;
+}
+
+/*Main Navigation Styles*/
+.main-navigation {
+  display: inline-block;
+  margin: 20px;
+}
+
+/*Global Navigation Heading Styles*/
+.nav-heading {
+  font-size: 2em;
+  font-weight: 300;
+  display: inline-block;
+}
+
+/*Global Navigation Links Styles*/
+.nav-links {
+  font-size: 1.3em;
+  list-style: none;
+  display: inline-block;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: #393939;
+  padding: 20px;
+}
+
+/*Global Paragraph Text Styles*/
+.p-texts {
+  font-size: 1.1em;
+  color: #393939;
+  display: block;
+  margin: auto;
+}
+
+/*Special Main Navigation Heading Styles*/
+.shop-now a {
+  color: #5BACC3;
+}
+
+/*Global Nitro Pink Sections Backgrounds Styles*/
+.nitro-pink-backgrounds {
+  background-color: #FFF0ED;
+}
+
+/*
+Project Name: Coffee Shop - Sprint 1
+Name: Anurag Bhattacharya
+Description: This is the Landing Page Style Sheet - All Styles are applied uniquely to the Landing Page
+CSS Concept Used: Relative Units, CSS Display, CSS Box Model, CSS Flexbox and BEM Concept
+*/
+/*Header Section Styles*/
+.header-section {
+  background-color: #FFF0ED;
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 5rem;
+  margin: auto;
+}
+
+.header-section__mainNavigation {
+  margin: 20px;
+}
+
+/*Header Content Styles*/
+.header-content {
+  background-color: #FFF0ED;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+/*Header Content Wrapper Styles*/
+.header-content__descriptionWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 25%;
+}
+
+/*Header Content Title Styles*/
+.header-content__title {
+  font-size: 3.75em;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+
+/*Header Content Text Styles*/
+.p-texts {
+  margin-bottom: 20px;
+}
+
+/*Header Content Button Styles*/
+.header-content__button {
+  width: 180px;
+  font-size: 1.3em;
+  background-color: #5BACC3;
+  color: #FFF;
+  padding: 20px;
+}
+
+.header-content__button-surrounding {
+  position: relative;
+  width: 180px;
+  height: 72px;
+  left: -10px;
+  bottom: 80px;
+  border: 2px #393939 solid;
+}
+
+/*Header Content Image Styles*/
+.header-contentImage {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: flex-end;
+}
+
+.header-content__product {
+  height: 280px;
+  margin: 20px;
+}
+
+/*Product Section Styles*/
+.product-section {
+  background-color: #F7F7F7;
+}
+
+/*Product Section Title Styles*/
+.h1-h2-titles {
+  text-align: center;
+  padding: 20px;
+  background-color: #F7F7F7;
+}
+
+/*Product Section Wrapper Styles*/
+.product-section__wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Product Items Styles*/
+.product-section__productItem {
+  width: 330px;
+  height: 440px;
+  margin: 20px;
+  border-radius: 10px;
+  box-shadow: 0 5px 9px -1px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Product Text Section Wrapper Styles*/
+.product-section__ProductText-wrapper {
+  background-color: #FFF0ED;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 20px;
+  height: 100%;
+  width: 100%;
+}
+
+.product-section__ProductInformation {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Product Image Styles*/
+.product-section__productImage {
+  height: 70%;
+  margin: 10px;
+}
+
+.product-section__productPack {
+  color: #909090;
+}
+
+/*Product Price Styles*/
+.product-section__productPrice {
+  margin-left: 20px;
+  font-size: 1.1em;
+  font-weight: bold;
+  color: #5BACC3;
+}
+
+/*Product View All Button Wrapper Styles*/
+.product-section__viewAllButton-wrapper {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  padding: 20px;
+  width: 100%;
+  background-color: #F7F7F7;
+  position: absolute;
+}
+
+.product-section__viewAllButton-surrounding-border {
+  position: relative;
+  width: 180px;
+  height: 72px;
+  left: 680px;
+  top: 10px;
+  bottom: 10px;
+  border: 2px solid black;
+  margin: 20px;
+}
+
+/*Product View All Button Styles*/
+.product-section__viewAllButton {
+  width: 180px;
+  height: 72px;
+  font-size: 1.3em;
+  background-color: #5BACC3;
+  color: #FFF;
+  padding: 20px;
+}
+
+/*Discount Section Wrapper*/
+.discount-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: -moz-fit-content;
+  height: fit-content;
+  margin: 20px;
+}
+
+.discount-wrapper__promotionsSection {
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.discount-wrapper__promotionsTitle {
+  font-size: 3.75em;
+  font-weight: 300;
+  margin: 20px;
+}
+
+.discount-wrapper__promotionsText {
+  font-size: 1.1em;
+  color: #393939;
+  margin: 20px;
+}
+
+.discount-wrapper__promotionsImage {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  margin: 20px;
+}
+
+.discount-wrapper__promotionsIcons {
+  width: 3.5em;
+}
+
+.discount-wrapper__promotionsButton-wrapper {
+  padding-left: 20px;
+}
+
+.discount-wrapper__promotionsButton {
+  width: 180px;
+  font-size: 1.3em;
+  background-color: #5BACC3;
+  color: #FFF;
+  padding: 20px;
+}
+
+.discount-wrapper__surrounding-border {
+  position: relative;
+  width: 180px;
+  height: 72px;
+  left: 10px;
+  bottom: 80px;
+  border: 2px #393939 solid;
+}
+
+.discount-wrapper__promotionsBackgroundImage {
+  width: 400px;
+  padding: 20px;
+  margin: 20px;
+  background-image: url(../assets/coldbrewbackground.png);
+  background-position: center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.discount-wrapper__bgsurrounding-border {
+  position: relative;
+  width: 400px;
+  height: 350px;
+  left: -390px;
+  top: -20px;
+  bottom: 50px;
+  border: 5px #5BACC3 solid;
+}
+
+/*Discount Banner Styles*/
+#discount-wrapper__discountBanner {
+  width: 90%;
+  height: -moz-fit-content;
+  height: fit-content;
+  background-color: #393939;
+  padding: 20px;
+  margin-top: 150px;
+  margin-bottom: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/*Discount Text Styles*/
+#discount-wrapper__discount-text {
+  font-size: 3em;
+  color: #FFF;
+}
+
+/*Discount Text - Special Case*/
+#discount-wrapper__bolded-text {
+  font-weight: bold;
+}
+
+/*Footer Section Styles*/
+.footer-section {
+  background-color: #FFF0ED;
+  margin-top: 20px;
+  background-image: linear-gradient(rgba(255, 240, 237, 0.9), rgba(255, 240, 237, 0.9)), url("../assets/coffee-beans-logo-and-footer.svg");
+  background-repeat: no-repeat;
+  background-size: 120px;
+  background-position-y: 5%;
+  background-position-x: -3%;
+}
+
+/*Footer Content Styles*/
+.footer-section__footer-content {
+  display: flex;
+  flex-direction: row;
+  align-items: flex-start;
+  justify-content: space-evenly;
+  width: 100%;
+  margin-left: 10px;
+}
+
+/*Footer Cards Styles*/
+.footer-section__footer-card {
+  width: 250px;
+  margin: 20px;
+}
+
+.social-card {
+  background-image: linear-gradient(rgba(255, 240, 237, 0.9), rgba(255, 240, 237, 0.9)), url("../assets/coffee-beans-logo-and-footer.svg");
+  background-repeat: no-repeat;
+  background-size: 120px;
+  background-position-y: 50px;
+  background-position-x: 200px;
+}
+
+/*Footer Titles Styles*/
+.footer-section_footer-header {
+  font-size: 2em;
+  font-weight: 300;
+  margin: 20px;
+}
+
+/*Footer Special Case Bolded Text Styles*/
+#footer-section__bolded-text {
+  font-weight: bold;
+}
+
+/*Footer Section Icons Styles*/
+.footer-section_icons {
+  width: 3.5em;
+}/*# sourceMappingURL=landing.css.map */
