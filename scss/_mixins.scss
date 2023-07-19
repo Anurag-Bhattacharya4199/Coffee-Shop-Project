@@ -1,0 +1,50 @@
+@mixin main-font-style($weight, $margin, $padding) {
+  font-weight: $weight;
+  margin: $margin;
+  padding: $padding;
+}
+
+@mixin header-style($display, $width, $height, $margin) {
+  display: $display;
+  width: $width;
+  height: $height;
+  margin: $margin;
+}
+
+@mixin main-logo-style($width, $vertical-align) {
+  width: $width;
+  vertical-align: $vertical-align;
+}
+
+@mixin h1-h2-titles-style($font-size, $font-weight) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+}
+
+@mixin header3-styles($font-size, $font-weight) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+}
+
+@mixin main-navigation-style($display, $margin) {
+  display: $display;
+  margin: $margin;
+}
+
+@mixin nav-heading-style($font-size, $font-weight, $display) {
+  font-size: $font-size;
+  font-weight: $font-weight;
+  display: $display;
+}
+
+@mixin nav-links-style($font-size, $list-style, $display) {
+  font-size: $font-size;
+  list-style: $list-style;
+  display: $display;
+}
+
+@mixin p-style($font-size, $display, $margin) {
+  font-size: $font-size;
+  display: $display;
+  margin: $margin;
+}

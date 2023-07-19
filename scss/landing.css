@@ -58,7 +58,6 @@ header {
   list-style: none;
   display: inline-block;
 }
-
 .nav-links a {
   text-decoration: none;
   color: #393939;
@@ -68,9 +67,9 @@ header {
 /*Global Paragraph Text Styles*/
 .p-texts {
   font-size: 1.1em;
-  color: #393939;
   display: block;
   margin: auto;
+  color: #393939;
 }
 
 /*Special Main Navigation Heading Styles*/
