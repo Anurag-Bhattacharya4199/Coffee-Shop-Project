@@ -5,9 +5,11 @@ Description: This is the Landing Page Style Sheet - All Styles are applied uniqu
 CSS Concept Used: Relative Units, CSS Display, CSS Box Model, CSS Flexbox
 */
 
+@import '../variables';
+
 /*Whole Body Section Styles*/
 * {
-    font-family: 'Open Sans';
+    font-family: $main-font-family;
     font-weight: 400;
     margin: 0px;
     padding: 0px;
@@ -15,7 +17,7 @@ CSS Concept Used: Relative Units, CSS Display, CSS Box Model, CSS Flexbox
 
 /*Header Styles*/
 header {
-    background-color: #FFF0ED;
+    background-color: $nitro-pink-color;
     display: inline-block;
     width: 100%;
     height: 5rem;
@@ -62,24 +64,24 @@ header {
 
 .nav-links a {
     text-decoration: none;
-    color: #393939;
+    color: $gradiant-color;
     padding: 20px;
 }
 
 /*Global Paragraph Text Styles*/
 .p-texts {
     font-size: 1.1em;
-    color: #393939;
+    color: $gradiant-color;
     display: block;
     margin: auto;
 }
 
 /*Special Main Navigation Heading Styles*/
 .shop-now a {
-    color: #5BACC3;
+    color: $nitro-blue-color;
 }
 
 /*Global Nitro Pink Sections Backgrounds Styles*/
 .nitro-pink-backgrounds {
-    background-color: #FFF0ED;
+    background-color: $nitro-pink-color;
 }

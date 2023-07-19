@@ -6,10 +6,11 @@ CSS Concept Used: Relative Units, CSS Display, CSS Box Model, CSS Flexbox
 */
 
 @use './partials/global' as *;
+@import './variables';
 
 /*Header Section Styles*/
 .header-section {
-    background-color: #FFF0ED;
+    background-color: $nitro-pink-color;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -27,7 +28,7 @@ CSS Concept Used: Relative Units, CSS Display, CSS Box Model, CSS Flexbox
     bottom: 15px;
     width: 300px;
     height: 200px;
-    border: solid 5px #5BACC3;
+    border: solid 5px $nitro-blue-color;
 }
 
 /*Menu Webpage Title Styles*/
@@ -36,7 +37,7 @@ CSS Concept Used: Relative Units, CSS Display, CSS Box Model, CSS Flexbox
     position: absolute;
     width: 300px;
     height: 200px;
-    background-color: #393939;
+    background-color: $gradiant-color;
 }
 
 /*Menu Webpage Title Background Image Styles*/
@@ -53,7 +54,7 @@ CSS Concept Used: Relative Units, CSS Display, CSS Box Model, CSS Flexbox
 
 /*Menu Title Styles*/
 .h1-h2-titles {
-    color: #FFF;
+    color: $white-color;
     text-align: center;
     display: block;
     margin: auto;
@@ -63,25 +64,25 @@ CSS Concept Used: Relative Units, CSS Display, CSS Box Model, CSS Flexbox
 #sub-nav-menu {
     width: 100%;
     height: 80px;
-    background-color: #393939;
+    background-color: $gradiant-color;
     text-align: center;
 }
 
 .nav-links.sub-nav-link {
-    border-left: 4px solid #5BACC3;
+    border-left: 4px solid $nitro-blue-color;
     margin: 20px;
 }
 
 /*Sub-Navigation Menu Links Styles*/
 #sub-nav-menu .nav-links a {
-    color: #FFF;
+    color: $white-color;
     text-decoration: none;
 }
 
 /*Menu Headings Styles*/
 .nitro-pink-backgrounds .h1-h2-titles,
 #light-gray-background .h1-h2-titles {
-    color: #393939;
+    color: $gradiant-color;
     padding-bottom: 20px;
 }
 
@@ -89,13 +90,13 @@ CSS Concept Used: Relative Units, CSS Display, CSS Box Model, CSS Flexbox
 .nitro-pink-backgrounds .h3-titles,
 #light-gray-background .h3-titles {
     text-align: center;
-    color: #393939;
+    color: $gradiant-color;
     padding-bottom: 20px;
 }
 
 /*Cold Drinks Section Styles*/
 #light-gray-background {
-    background-color: #F7F7F7;
+    background-color: $light-gray-color;
 }
 
 /*Menu Item Description Styles*/
@@ -112,7 +113,7 @@ CSS Concept Used: Relative Units, CSS Display, CSS Box Model, CSS Flexbox
 /*Menu Item Price Styles*/
 .p-texts-price {
     font-size: 1em;
-    color: #5BACC3;
+    color: $nitro-blue-color;
     text-align: center;
     padding-bottom: 20px;
 }
