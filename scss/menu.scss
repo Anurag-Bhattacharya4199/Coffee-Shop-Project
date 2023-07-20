@@ -16,10 +16,10 @@ CSS Concept Used: Relative Units, CSS Display, CSS Box Model, CSS Flexbox
     width: 100%;
     height: 5rem;
     margin: auto;
-}
 
-.header-section__mainNavigation {
-    margin: 20px;
+    &__mainNavigation {
+        margin: 20px;
+    }
 }
 
 .surrounding-title-box {
