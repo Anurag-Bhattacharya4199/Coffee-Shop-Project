@@ -31,43 +31,47 @@ HTML Concepts: Standard HTML Concepts
   <body>
     <!--Header Section-->
     <header class="header-section">
-      <div class="header-section__header-text">
-        <!--Main Logo-->
-        <a href="../index.html"
-          ><img
-            src="../assets/coffee-beans-logo-and-footer.svg"
-            alt="coffee-beans-logo"
-            class="main-logo"
-        /></a>
-        <!--Header Title-->
-        <p class="header-section__mainHeading nav-heading">nitro</p>
-      </div>
-      <!--Main Navigation-->
-      <ul class="header-section__mainNavigation">
-        <li class="header-section__navLinks nav-links">
-          <a href="../index.html">ABOUT</a>
-        </li>
-        <li class="header-section__navLinks nav-links">
-          <a href="./menu.html">MENU</a>
-        </li>
-        <li class="header-section__navLinks nav-links shop-now">
-          <a href="./menu.html">SHOP NOW</a>
-        </li>
-      </ul>
+      <article class="header-section__header-text">
+        <div>
+          <!--Main Logo-->
+          <a href="../index.html"
+            ><img
+              src="../assets/coffee-beans-logo-and-footer.svg"
+              alt="coffee-beans-logo"
+              class="main-logo"
+          /></a>
+          <!--Header Title-->
+          <p class="header-section__mainHeading nav-heading">nitro</p>
+        </div>
+      </article>
+      <nav class="header-section__mainNavigation">
+        <!--Main Navigation-->
+        <ul>
+          <li class="header-section__navLinks nav-links">
+            <a href="../index.html">ABOUT</a>
+          </li>
+          <li class="header-section__navLinks nav-links">
+            <a href="menu.html">MENU</a>
+          </li>
+          <li class="header-section__navLinks nav-links shop-now">
+            <a href="menu.html">SHOP NOW</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
     <!--Menu Background Image-->
-    <div class="background-image">
+    <section class="background-image">
       <!--Menu Title-->
-      <div class="title-box">
+      <article class="title-box">
         <h1 class="h1-h2-titles">MENU</h1>
-      </div>
+      </article>
       <div class="surrounding-title-box"></div>
-    </div>
+    </section>
 
     <!--Menu Sub-Navigation-->
-    <nav>
-      <ul id="sub-nav-menu">
+    <nav class="sub-nav-menu">
+      <ul>
         <li class="nav-links sub-nav-link"><a href="">HOT DRINKS</a></li>
         <li class="nav-links sub-nav-link"><a href="">COLD DRINKS</a></li>
         <li class="nav-links sub-nav-link"><a href="">PASTRIES</a></li>
@@ -75,7 +79,7 @@ HTML Concepts: Standard HTML Concepts
     </nav>
 
     <!--Hot Drinks Section-->
-    <div class="nitro-pink-backgrounds">
+    <section class="nitro-pink-backgrounds">
       <!--Hot Drinks Section Title-->
       <h2 class="h1-h2-titles">Hot Drinks</h2>
       <!--Hot Drinks Item Title-->
@@ -98,10 +102,10 @@ HTML Concepts: Standard HTML Concepts
       </p>
       <!--Hot Drinks Item Price-->
       <p class="p-texts-price">$4.99</p>
-    </div>
+    </section>
 
     <!--Cold Drinks Section-->
-    <div id="light-gray-background">
+    <section id="light-gray-background">
       <!--Cold Drinks Section Title-->
       <h2 class="h1-h2-titles">Cold Drinks</h2>
       <!--Cold Drinks Item Title-->
@@ -123,10 +127,10 @@ HTML Concepts: Standard HTML Concepts
       </p>
       <!--Cold Drinks Item Price-->
       <p class="p-texts-price">$6.99</p>
-    </div>
+    </section>
 
     <!--Pastries Section-->
-    <div class="nitro-pink-backgrounds">
+    <section class="nitro-pink-backgrounds">
       <!--Pastries Section Title-->
       <h2 class="h1-h2-titles">Pastries</h2>
       <!--Pastries Item Title-->
@@ -148,6 +152,6 @@ HTML Concepts: Standard HTML Concepts
       </p>
       <!--Pastries Item Price-->
       <p class="p-texts-price">$2.50</p>
-    </div>
+    </section>
   </body>
 </html>

@@ -61,7 +61,7 @@ CSS Concept Used: Relative Units, CSS Display, CSS Box Model, CSS Flexbox
 }
 
 /*Sub-Navigation Menu Styles*/
-#sub-nav-menu {
+.sub-nav-menu {
     width: 100%;
     height: 80px;
     background-color: $gradiant-color;
@@ -74,7 +74,7 @@ CSS Concept Used: Relative Units, CSS Display, CSS Box Model, CSS Flexbox
 }
 
 /*Sub-Navigation Menu Links Styles*/
-#sub-nav-menu .nav-links a {
+.sub-nav-menu .nav-links a {
     color: $white-color;
     text-decoration: none;
 }

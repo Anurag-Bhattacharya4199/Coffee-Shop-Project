@@ -46,7 +46,7 @@ CSS Concept Used: Relative Units, CSS Display, CSS Box Model, CSS Flexbox and BE
         @include button-surrounding-style(relative, 180px, 72px, -10px, 80px);
         border: 2px $gradiant-color solid;
     }
-
+    
     &__product {
         height: 280px;
         margin: 20px;
@@ -121,6 +121,7 @@ CSS Concept Used: Relative Units, CSS Display, CSS Box Model, CSS Flexbox and BE
     &__viewAllButton-wrapper {
         display: flex;
         justify-content: center;
+        align-items: center ;
         margin-top: 0px;
         margin-bottom: 20px;
         padding: 20px;
@@ -141,12 +142,9 @@ CSS Concept Used: Relative Units, CSS Display, CSS Box Model, CSS Flexbox and BE
     }
 
     &__viewAllButton {
-        width: 180px;
-        height: 72px;
-        font-size: 1.3em;
+        @include button-style(180px, 1.3em, 20px);
         background-color: $nitro-blue-color;
         color: $white-color;
-        padding: 20px;
     }
 }
 
@@ -191,11 +189,9 @@ CSS Concept Used: Relative Units, CSS Display, CSS Box Model, CSS Flexbox and BE
     }
 
     &__promotionsButton {
-        width: 180px;
-        font-size: 1.3em;
+        @include button-style(180px, 1.3em, 20px);
         background-color: $nitro-blue-color;
         color: $white-color;
-        padding: 20px;
     }
 
     &__surrounding-border {

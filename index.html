@@ -5,6 +5,13 @@ Description: This is the Menu HTML Document - This HTML File Renders the Menu Pa
 HTML Concepts: BEM Concept Applied
 -->
 
+<!--
+    Questions to ask:
+    1) SHOP NOW, VIEW ALL and LEARN MORE Buttons links not working
+    2) Surrounding Borders for Buttons and Background Image of Promotion Section
+    3) Promotions Text Section Center
+-->
+
 <!--Document Type-->
 <!DOCTYPE html>
 
@@ -29,152 +36,151 @@ HTML Concepts: BEM Concept Applied
 <body>
     <!--Header Section-->
     <header class="header-section">
-        <div class="header-section__header-text">
-            <!--Main Logo-->
-            <a href="./index.html"><img src="./assets/coffee-beans-logo-and-footer.svg" alt="coffee-beans-logo" class="main-logo"/></a>
-            <!--Header Title-->
-            <p class="header-section__mainHeading nav-heading">nitro</p>
-        </div>
-        <!--Main Navigation-->
-        <ul class="header-section__mainNavigation">
-            <li class="header-section__navLinks nav-links"><a href="./index.html">ABOUT</a></li>
-            <li class="header-section__navLinks nav-links"><a href="./pages/menu.html">MENU</a></li>
-            <li class="header-section__navLinks nav-links shop-now"><a href="./pages/menu.html">SHOP NOW</a></li>
-        </ul>
+        <article class="header-section__header-text">
+            <div>
+                <!--Main Logo-->
+                <a href="index.html"><img src="./assets/coffee-beans-logo-and-footer.svg" alt="coffee-beans-logo" class="main-logo"/></a>
+                <!--Header Title-->
+                <p class="header-section__mainHeading nav-heading">nitro</p>
+            </div>
+        </article>
+        <nav class="header-section__mainNavigation">
+                <!--Main Navigation-->
+                <ul>
+                    <li class="header-section__navLinks nav-links"><a href="index.html">ABOUT</a></li>
+                    <li class="header-section__navLinks nav-links"><a href="./pages/menu.html">MENU</a></li>
+                    <li class="header-section__navLinks nav-links shop-now"><a href="./pages/menu.html">SHOP NOW</a></li>
+                </ul>
+        </nav>
     </header>
 
-    <!--Nitro Coffee Description Section-->
-    <div class="header-content">
-        <div class="header-content__descriptionWrapper">
+    <section class="header-content">
+        <section class="header-content__descriptionWrapper">
             <!--Nitro Coffee Description Section Title-->
             <h1 class="header-content__title">Nitro Coffee</h1>
             <!--Nitro Coffee Description Section Text-->
             <p class="header-content__description p-texts">Coffee is a brewed drink prepared from roasted coffee beans, the seeds of berries from certain Coffee species</p>
-            <div class="header-content__button-wrapper">
+            <article class="header-content__button-wrapper">
                 <!--Shop Now Button-->
                 <a href="./pages/menu.html"><button class="header-content__button">SHOP NOW</button></a>
                 <div class="header-content__button-surrounding"></div>
-            </div>
-        </div>
+            </article>
+        </section>
         <!--Coffee Beans Logo-->
-        <div class="header-contentImage">
+        <article class="header-contentImage">
             <img alt="coffee bag" src="./assets/coffeebeans-hero.png" class="header-content__product">
-        </div>
-    </div>
+        </article>
+    </section>
 
-    <!--Our Products Section-->
-    <div class="product-section">
+    <section class="product-section">
         <!--Our Products Section Title-->
-        <h2 class="product-section__title h1-h2-titles  ">Our Products</h2>
-        <!--Products-->
-        <div class="product-section__wrapper">
+        <h2 class="product-section__title h1-h2-titles">Our Products</h2>
+        <section class="product-section__wrapper">
             <!--Product Section-->
-            <div class="product-section__productItem">
+            <article class="product-section__productItem">
                 <!--Product Item Image-->
                 <img alt="coffee beans" src="./assets/coffeebeans.png" class="product-section__productImage">
                 
-                <div class="product-section__ProductText-wrapper">
-                    <div class="product-section__ProductInformation">
-                        <div class="product-section__ProductPack">
+                <section class="product-section__ProductText-wrapper">
+                    <section class="product-section__ProductInformation">
+                        <article class="product-section__ProductPack">
                             <h3 class="product-section__productTitle h3-titles">Coffee Beans</h3>
                             <p class="product-section__productPack">Pack of 3</p>
-                        </div>
+                        </article>
                         <!--Product Item Price-->
                         <p class="product-section__productPrice">$19</p>
-                    </div>
-                </div>
-            </div>
+                    </section>
+                </section>
+            </article>
             <!--Product Section-->
-            <div class="product-section__productItem">
+            <article class="product-section__productItem">
                 <!--Product Item Image-->
                 <img alt="cold brew" src="./assets/coldbrew.png" class="product-section__productImage">
                 
-                <div class="product-section__ProductText-wrapper">
-                    <div class="product-section__ProductInformation">
-                        <div class="product-section__ProductPack">
+                <section class="product-section__ProductText-wrapper">
+                    <section class="product-section__ProductInformation">
+                        <article class="product-section__ProductPack">
                             <h3 class="product-section__productTitle h3-titles">Cold Brew</h3>
                             <p class="product-section__productPack">1 can</p>
-                        </div>
+                        </article>
                         <!--Product Item Price-->
                         <p class="product-section__productPrice">$5</p>
-                    </div>
-                </div>
-            </div>
+                    </section>
+                </section>
+            </article>
             <!--Product Section-->
-            <div class="product-section__productItem">
+            <article class="product-section__productItem">
                 <!--Product Item Image-->
                 <img alt="coffee beans" src="./assets/inhousebrew.png" class="product-section__productImage">
                 
-                <div class="product-section__ProductText-wrapper">
-                    <div class="product-section__ProductInformation">
-                        <div class="product-section__ProductPack">
+                <section class="product-section__ProductText-wrapper">
+                    <section class="product-section__ProductInformation">
+                        <article class="product-section__ProductPack">
                             <h3 class="product-section__productTitle h3-titles">In-house Brew</h3>
                             <p class="product-section__productPack">1 cup</p>
-                        </div>
+                        </article>
                         <!--Product Item Price-->
                         <p class="product-section__productPrice">$3</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!--View All Button-->
-        <div class="product-section__viewAllButton-wrapper">
+                    </section>
+                </section>
+            </article>
+        </section>
+        <section class="product-section__viewAllButton-wrapper">
             <a href="./pages/menu.html"><button class="product-section__viewAllButton">VIEW ALL</button></a>
-        </div>
-        <div class="product-section__viewAllButton-surrounding-border">
-        </div>
-    </div>
+        </section>
+        <div class="product-section__viewAllButton-surrounding-border"></div>
+    </section>
     <!--Discount Section-->
-    <div class="discount-wrapper">
-        <div class="discount-wrapper__promotionsSection">
-            <div class="discount-wrapper__promotionsInformation">
+    <section class="discount-wrapper">
+        <section class="discount-wrapper__promotionsSection">
+            <article class="discount-wrapper__promotionsInformation">
                 <h1 class="discount-wrapper__promotionsTitle">We're Different</h1>
                 <p class="discount-wrapper__promotionsText">We grow and roast our own beans. Every bean, every cup, every step of the way, we strive for excellence</p>
-                <div class="discount-wrapper__promotionsImage">
+                <section class="discount-wrapper__promotionsImage">
                     <img alt="flowers" src="./assets/planting.svg" class="discount-wrapper__promotionsIcons">
                     <img alt="coffee beans" src="./assets/coffee-beans.svg" class="discount-wrapper__promotionsIcons">
                     <img alt="coffee cup" src="./assets/coffee-cup.svg" class="discount-wrapper__promotionsIcons">
-                </div>
-                <div class="discount-wrapper__promotionsButton-wrapper">
+                </section>
+                <section class="discount-wrapper__promotionsButton-wrapper">
                     <a href="./index.html"><button class="discount-wrapper__promotionsButton">LEARN MORE</button></a>
-                </div>
+                </section>
                 <div class="discount-wrapper__surrounding-border"></div>
-            </div>
-            <div class="discount-wrapper__promotionsBackgroundImage">
+            </article>
+            <article class="discount-wrapper__promotionsBackgroundImage">
                 <img alt="titled can" src="./assets/tiltedcan.png" class="product-section__productImage">
-            </div>
+            </article>
             <div class="discount-wrapper__bgsurrounding-border">
             </div>
-        </div>
-        <div class="discount-wrapper__discountBanner">
+        </section>
+        <section class="discount-wrapper__discountBanner">
             <!--Discount Section Description-->
             <p class="discount-wrapper__discount-text">Get 20% off your first order with code: <span id="discount-wrapper__bolded-text">FirstNitro</span></id></p>
-        </div>
-    </div>
+        </section>
+    </section>
 
     <!--Footer Section-->
-    <footer class="footer-section">
+    <footer  class="footer-section">
         <!--Footer Content-->
-        <div class="footer-section__footer-content">
+        <section class="footer-section__footer-content">
             <!--Address Section-->
-            <div class="footer-section__footer-card">
-                <div class="footer-section_footer-header">Address</div>
+            <article class="footer-section__footer-card">
+                <h4 class="footer-section_footer-header">Address</h4>
                 <p class="p-texts">503 Broadway Penthouse New York</p>                
-            </div>
+            </article>
             <!--Hours Section-->
-            <div class="footer-section__footer-card">
-                <div class="footer-section_footer-header">Hours</div>
+            <article class="footer-section__footer-card">
+                <h4  class="footer-section_footer-header">Hours</h4>
                 <p><span id="footer-section__bolded-text">Monday - Friday:</span> 9am - 7pm</p>
                 <p><span id="footer-section__bolded-text">Saturday - Sunday:</span> 10am - 5pm</p>
-            </div>
+            </article>
             <!--Social Section-->
-            <div class="footer-section__footer-card social-card">
-                <div class="footer-section_footer-header">Socials</div>
+            <article class="footer-section__footer-card social-card">
+                <h4 class="footer-section_footer-header">Socials</h4>
                 <a href="https://www.facebook.com/"><img src="./assets/Facebook-Icon.svg" alt="FB Logo" class="footer-section__icons"></a>
                 <a href="https://www.yelp.com/"><img src="./assets/Yelp-Icon.svg" alt="Yelp Logo" class="footer-section__icons"></a>
                 <a href="https://www.instagram.com/"><img src="./assets/Instagram-Icon.svg" alt="Instagram Logo" class="footer-section__icons"></a>
-            </div>
-        </div>
+            </article>
+        </section>
     </footer>
 </body>
 </html>

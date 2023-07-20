@@ -210,6 +210,7 @@ CSS Concept Used: Relative Units, CSS Display, CSS Box Model, CSS Flexbox and BE
 .product-section__viewAllButton-wrapper {
   display: flex;
   justify-content: center;
+  align-items: center;
   margin-top: 0px;
   margin-bottom: 20px;
   padding: 20px;
@@ -229,11 +230,10 @@ CSS Concept Used: Relative Units, CSS Display, CSS Box Model, CSS Flexbox and BE
 }
 .product-section__viewAllButton {
   width: 180px;
-  height: 72px;
   font-size: 1.3em;
+  padding: 20px;
   background-color: #5BACC3;
   color: #FFF;
-  padding: 20px;
 }
 
 /*Discount Section Wrapper*/
@@ -277,9 +277,9 @@ CSS Concept Used: Relative Units, CSS Display, CSS Box Model, CSS Flexbox and BE
 .discount-wrapper__promotionsButton {
   width: 180px;
   font-size: 1.3em;
+  padding: 20px;
   background-color: #5BACC3;
   color: #FFF;
-  padding: 20px;
 }
 .discount-wrapper__surrounding-border {
   position: relative;
