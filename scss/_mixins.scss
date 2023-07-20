@@ -48,3 +48,38 @@
   display: $display;
   margin: $margin;
 }
+
+@mixin header-content($display, $align-items, $flex-wrap, $justify-content) {
+  display: $display;
+  align-items: $align-items;
+  flex-wrap: $flex-wrap;
+  justify-content: $justify-content;
+}
+
+@mixin button-style($width, $font-size, $padding) {
+  width: $width;
+  font-size: $font-size;
+  padding: $padding;
+}
+
+@mixin button-surrounding-style($position, $width, $height, $left, $bottom) {
+  position: $position;
+  width: $width;
+  height: $height;
+  left: $left;
+  bottom: $bottom;
+}
+
+@mixin productItem-style($width, $height, $margin, $border-radius) {
+  width: $width;
+  height: $height;
+  margin: $margin;
+  border-radius: $border-radius;
+}
+
+@mixin flexbox-styles($display, $flex-direction, $justify-content, $align-items) {
+  display: $display;
+  flex-direction: $flex-direction;
+  justify-content: $justify-content;
+  align-items: $align-items;
+}

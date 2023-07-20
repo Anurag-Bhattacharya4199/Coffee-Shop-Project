@@ -92,10 +92,10 @@ CSS Concept Used: Relative Units, CSS Display, CSS Box Model, CSS Flexbox and BE
 .header-section {
   background-color: #FFF0ED;
   display: flex;
-  justify-content: space-between;
   width: 100%;
   height: 5rem;
   margin: auto;
+  justify-content: space-between;
 }
 
 .header-section__mainNavigation {
@@ -106,40 +106,27 @@ CSS Concept Used: Relative Units, CSS Display, CSS Box Model, CSS Flexbox and BE
 .header-content {
   background-color: #FFF0ED;
   display: flex;
-  flex-direction: row;
   align-items: center;
   flex-wrap: wrap;
   justify-content: space-evenly;
 }
-
-/*Header Content Wrapper Styles*/
 .header-content__descriptionWrapper {
   display: flex;
   flex-direction: column;
   width: 25%;
 }
-
-/*Header Content Title Styles*/
 .header-content__title {
   font-size: 3.75em;
   font-weight: 300;
   margin-bottom: 20px;
 }
-
-/*Header Content Text Styles*/
-.p-texts {
-  margin-bottom: 20px;
-}
-
-/*Header Content Button Styles*/
 .header-content__button {
   width: 180px;
   font-size: 1.3em;
+  padding: 20px;
   background-color: #5BACC3;
   color: #FFF;
-  padding: 20px;
 }
-
 .header-content__button-surrounding {
   position: relative;
   width: 180px;
@@ -147,6 +134,10 @@ CSS Concept Used: Relative Units, CSS Display, CSS Box Model, CSS Flexbox and BE
   left: -10px;
   bottom: 80px;
   border: 2px #393939 solid;
+}
+.header-content__product {
+  height: 280px;
+  margin: 20px;
 }
 
 /*Header Content Image Styles*/
@@ -156,14 +147,9 @@ CSS Concept Used: Relative Units, CSS Display, CSS Box Model, CSS Flexbox and BE
   align-items: flex-end;
 }
 
-.header-content__product {
-  height: 280px;
-  margin: 20px;
-}
-
-/*Product Section Styles*/
-.product-section {
-  background-color: #F7F7F7;
+/*Header Content Text Styles*/
+.p-texts {
+  margin-bottom: 20px;
 }
 
 /*Product Section Title Styles*/
@@ -173,14 +159,15 @@ CSS Concept Used: Relative Units, CSS Display, CSS Box Model, CSS Flexbox and BE
   background-color: #F7F7F7;
 }
 
-/*Product Section Wrapper Styles*/
+/*Product Section Styles*/
+.product-section {
+  background-color: #F7F7F7;
+}
 .product-section__wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-/*Product Items Styles*/
 .product-section__productItem {
   width: 330px;
   height: 440px;
@@ -192,8 +179,6 @@ CSS Concept Used: Relative Units, CSS Display, CSS Box Model, CSS Flexbox and BE
   justify-content: center;
   align-items: center;
 }
-
-/*Product Text Section Wrapper Styles*/
 .product-section__ProductText-wrapper {
   background-color: #FFF0ED;
   display: flex;
@@ -204,32 +189,24 @@ CSS Concept Used: Relative Units, CSS Display, CSS Box Model, CSS Flexbox and BE
   height: 100%;
   width: 100%;
 }
-
 .product-section__ProductInformation {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-/*Product Image Styles*/
 .product-section__productImage {
   height: 70%;
   margin: 10px;
 }
-
 .product-section__productPack {
   color: #909090;
 }
-
-/*Product Price Styles*/
 .product-section__productPrice {
   margin-left: 20px;
   font-size: 1.1em;
   font-weight: bold;
   color: #5BACC3;
 }
-
-/*Product View All Button Wrapper Styles*/
 .product-section__viewAllButton-wrapper {
   display: flex;
   justify-content: center;
@@ -240,7 +217,6 @@ CSS Concept Used: Relative Units, CSS Display, CSS Box Model, CSS Flexbox and BE
   background-color: #F7F7F7;
   position: absolute;
 }
-
 .product-section__viewAllButton-surrounding-border {
   position: relative;
   width: 180px;
@@ -251,8 +227,6 @@ CSS Concept Used: Relative Units, CSS Display, CSS Box Model, CSS Flexbox and BE
   border: 2px solid #393939;
   margin: 20px;
 }
-
-/*Product View All Button Styles*/
 .product-section__viewAllButton {
   width: 180px;
   height: 72px;
@@ -272,41 +246,34 @@ CSS Concept Used: Relative Units, CSS Display, CSS Box Model, CSS Flexbox and BE
   height: fit-content;
   margin: 20px;
 }
-
 .discount-wrapper__promotionsSection {
   margin: 20px;
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
 .discount-wrapper__promotionsTitle {
   font-size: 3.75em;
   font-weight: 300;
   margin: 20px;
 }
-
 .discount-wrapper__promotionsText {
   font-size: 1.1em;
   color: #393939;
   margin: 20px;
 }
-
 .discount-wrapper__promotionsImage {
   display: flex;
   gap: 20px;
   align-items: flex-start;
   margin: 20px;
 }
-
 .discount-wrapper__promotionsIcons {
   width: 3.5em;
 }
-
 .discount-wrapper__promotionsButton-wrapper {
   padding-left: 20px;
 }
-
 .discount-wrapper__promotionsButton {
   width: 180px;
   font-size: 1.3em;
@@ -314,7 +281,6 @@ CSS Concept Used: Relative Units, CSS Display, CSS Box Model, CSS Flexbox and BE
   color: #FFF;
   padding: 20px;
 }
-
 .discount-wrapper__surrounding-border {
   position: relative;
   width: 180px;
@@ -323,7 +289,6 @@ CSS Concept Used: Relative Units, CSS Display, CSS Box Model, CSS Flexbox and BE
   bottom: 80px;
   border: 2px #393939 solid;
 }
-
 .discount-wrapper__promotionsBackgroundImage {
   width: 400px;
   padding: 20px;
@@ -335,7 +300,6 @@ CSS Concept Used: Relative Units, CSS Display, CSS Box Model, CSS Flexbox and BE
   justify-content: center;
   align-items: center;
 }
-
 .discount-wrapper__bgsurrounding-border {
   position: relative;
   width: 400px;
@@ -345,9 +309,7 @@ CSS Concept Used: Relative Units, CSS Display, CSS Box Model, CSS Flexbox and BE
   bottom: 50px;
   border: 5px #5BACC3 solid;
 }
-
-/*Discount Banner Styles*/
-#discount-wrapper__discountBanner {
+.discount-wrapper__discountBanner {
   width: 90%;
   height: -moz-fit-content;
   height: fit-content;
@@ -359,15 +321,11 @@ CSS Concept Used: Relative Units, CSS Display, CSS Box Model, CSS Flexbox and BE
   justify-content: center;
   align-items: center;
 }
-
-/*Discount Text Styles*/
-#discount-wrapper__discount-text {
+.discount-wrapper__discount-text {
   font-size: 3em;
   color: #FFF;
 }
-
-/*Discount Text - Special Case*/
-#discount-wrapper__bolded-text {
+.discount-wrapper__bolded-text {
   font-weight: bold;
 }
 
@@ -381,44 +339,25 @@ CSS Concept Used: Relative Units, CSS Display, CSS Box Model, CSS Flexbox and BE
   background-position-y: 5%;
   background-position-x: -3%;
 }
-
-/*Footer Content Styles*/
 .footer-section__footer-content {
   display: flex;
-  flex-direction: row;
   align-items: flex-start;
   justify-content: space-evenly;
   width: 100%;
   margin-left: 10px;
 }
-
-/*Footer Cards Styles*/
 .footer-section__footer-card {
   width: 250px;
   margin: 20px;
 }
-
-.social-card {
-  background-image: linear-gradient(rgba(255, 240, 237, 0.9), rgba(255, 240, 237, 0.9)), url("../assets/coffee-beans-logo-and-footer.svg");
-  background-repeat: no-repeat;
-  background-size: 120px;
-  background-position-y: 50px;
-  background-position-x: 200px;
-}
-
-/*Footer Titles Styles*/
-.footer-section_footer-header {
+.footer-section__footer-header {
   font-size: 2em;
   font-weight: 300;
   margin: 20px;
 }
-
-/*Footer Special Case Bolded Text Styles*/
-#footer-section__bolded-text {
+.footer-section__bolded-text {
   font-weight: bold;
 }
-
-/*Footer Section Icons Styles*/
-.footer-section_icons {
+.footer-section__icons {
   width: 3.5em;
 }/*# sourceMappingURL=landing.css.map */

@@ -11,11 +11,8 @@ CSS Concept Used: Relative Units, CSS Display, CSS Box Model, CSS Flexbox and BE
 /*Header Section Styles*/
 .header-section {
     background-color: $nitro-pink-color;
-    display: flex;
+    @include header-style(flex, 100%, 5rem, auto);
     justify-content: space-between;
-    width: 100%;
-    height: 5rem;
-    margin: auto;
 }
 
 .header-section__mainNavigation {
@@ -25,49 +22,35 @@ CSS Concept Used: Relative Units, CSS Display, CSS Box Model, CSS Flexbox and BE
 /*Header Content Styles*/
 .header-content {
     background-color: $nitro-pink-color;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
-}
+    @include header-content(flex,center,wrap,space-evenly);
 
-/*Header Content Wrapper Styles*/
-.header-content__descriptionWrapper {
-    display: flex;
-    flex-direction: column;
-    width: 25%;
-}
+    &__descriptionWrapper {
+        display: flex;
+        flex-direction: column;
+        width: 25%;
+    }
 
-/*Header Content Title Styles*/
-.header-content__title {
-    font-size: 3.75em;
-    font-weight: 300;
-    margin-bottom: 20px;
-}
+    &__title {
+        font-size: 3.75em;
+        font-weight: 300;
+        margin-bottom: 20px;
+    }
 
-/*Header Content Text Styles*/
-.p-texts {
-    margin-bottom: 20px;
-}
+    &__button {
+        @include button-style(180px, 1.3em, 20px);
+        background-color: $nitro-blue-color;
+        color: $white-color;
+    }
 
+    &__button-surrounding {
+        @include button-surrounding-style(relative, 180px, 72px, -10px, 80px);
+        border: 2px $gradiant-color solid;
+    }
 
-/*Header Content Button Styles*/
-.header-content__button {
-    width: 180px;
-    font-size: 1.3em;
-    background-color: $nitro-blue-color;
-    color: $white-color;
-    padding: 20px;
-}
-
-.header-content__button-surrounding {
-    position: relative;
-    width: 180px;
-    height: 72px;
-    left: -10px;
-    bottom: 80px;
-    border: 2px $gradiant-color solid;
+    &__product {
+        height: 280px;
+        margin: 20px;
+    }
 }
 
 /*Header Content Image Styles*/
@@ -75,17 +58,11 @@ CSS Concept Used: Relative Units, CSS Display, CSS Box Model, CSS Flexbox and BE
     display: flex;
     flex-direction: column-reverse;
     align-items: flex-end;
-
 }
 
-.header-content__product {
-    height: 280px;
-    margin: 20px;
-}
-
-/*Product Section Styles*/
-.product-section {
-    background-color: $light-gray-color;
+/*Header Content Text Styles*/
+.p-texts {
+    margin-bottom: 20px;
 }
 
 /*Product Section Title Styles*/
@@ -95,200 +72,183 @@ CSS Concept Used: Relative Units, CSS Display, CSS Box Model, CSS Flexbox and BE
     background-color: $light-gray-color;
 }
 
-/*Product Section Wrapper Styles*/
-.product-section__wrapper {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/*Product Items Styles*/
-.product-section__productItem {
-    width: 330px;
-    height: 440px;
-    margin: 20px;
-    border-radius: 10px;
-    box-shadow: 0 5px 9px -1px rgba(0, 0, 0, 0.25);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-/*Product Text Section Wrapper Styles*/
-.product-section__ProductText-wrapper {
-    background-color: $nitro-pink-color;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    align-items: center;
-    margin-top: 20px;
-    height: 100%;
-    width: 100%;
-}
-
-.product-section__ProductInformation {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/*Product Image Styles*/
-.product-section__productImage {
-    height: 70%;
-    margin: 10px;
-}
-
-.product-section__productPack {
-    color: $gray-color;
-}
-
-/*Product Price Styles*/
-.product-section__productPrice {
-    margin-left: 20px;
-    font-size: 1.1em;
-    font-weight: bold;
-    color: $nitro-blue-color;
-}
-
-/*Product View All Button Wrapper Styles*/
-.product-section__viewAllButton-wrapper {
-    display: flex;
-    justify-content: center;
-    margin-top: 0px;
-    margin-bottom: 20px;
-    padding: 20px;
-    width: 100%;
+/*Product Section Styles*/
+.product-section {
     background-color: $light-gray-color;
-    position: absolute;
-}
 
-.product-section__viewAllButton-surrounding-border {
-    position: relative;
-    width: 180px;
-    height: 72px;
-    left: 660px;
-    top: -10px;
-    bottom: 10px;
-    border: 2px solid $gradiant-color;
-    margin: 20px;
-}
+    &__wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-/*Product View All Button Styles*/
-.product-section__viewAllButton {
-    width: 180px;
-    height: 72px;
-    font-size: 1.3em;
-    background-color: $nitro-blue-color;
-    color: $white-color;
-    padding: 20px;
+    &__productItem {
+        @include productItem-style(330px, 440px, 20px, 10px);
+        box-shadow: 0 5px 9px -1px rgba(0, 0, 0, 0.25);
+        @include flexbox-styles(flex, column, center, center);
+    }
+
+    &__ProductText-wrapper {
+        background-color: $nitro-pink-color;
+        @include flexbox-styles(flex, column, space-evenly, center);
+        margin-top: 20px;
+        height: 100%;
+        width: 100%;
+    }
+
+    &__ProductInformation {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__productImage {
+        height: 70%;
+        margin: 10px;
+    }
+
+    &__productPack {
+        color: $gray-color;
+    }
+
+    &__productPrice {
+        margin-left: 20px;
+        font-size: 1.1em;
+        font-weight: bold;
+        color: $nitro-blue-color;
+    }
+
+    &__viewAllButton-wrapper {
+        display: flex;
+        justify-content: center;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        padding: 20px;
+        width: 100%;
+        background-color: $light-gray-color;
+        position: absolute;
+    }
+
+    &__viewAllButton-surrounding-border {
+        position: relative;
+        width: 180px;
+        height: 72px;
+        left: 660px;
+        top: -10px;
+        bottom: 10px;
+        border: 2px solid $gradiant-color;
+        margin: 20px;
+    }
+
+    &__viewAllButton {
+        width: 180px;
+        height: 72px;
+        font-size: 1.3em;
+        background-color: $nitro-blue-color;
+        color: $white-color;
+        padding: 20px;
+    }
 }
 
 /*Discount Section Wrapper*/
 .discount-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    @include flexbox-styles(flex, column, center, center);
     height: fit-content;
     margin: 20px;
-}
 
-.discount-wrapper__promotionsSection {
-    margin: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    &__promotionsSection {
+        margin: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-.discount-wrapper__promotionsTitle {
-    font-size: 3.75em;
-    font-weight: 300;
-    margin: 20px;
-}
+    &__promotionsTitle {
+        font-size: 3.75em;
+        font-weight: 300;
+        margin: 20px;
+    }
 
-.discount-wrapper__promotionsText {
-    font-size: 1.1em;
-    color: $gradiant-color;
-    margin: 20px;
-}
+    &__promotionsText {
+        font-size: 1.1em;
+        color: $gradiant-color;
+        margin: 20px;
+    }
 
-.discount-wrapper__promotionsImage {
-    display: flex;
-    gap: 20px;
-    align-items: flex-start;
-    margin: 20px;
-}
+    &__promotionsImage {
+        display: flex;
+        gap: 20px;
+        align-items: flex-start;
+        margin: 20px;
+    }
 
-.discount-wrapper__promotionsIcons {
-    width: 3.5em
-}
+    &__promotionsIcons {
+        width: 3.5em
+    }
 
-.discount-wrapper__promotionsButton-wrapper {
-    padding-left: 20px;
-}
+    &__promotionsButton-wrapper {
+        padding-left: 20px;
+    }
 
-.discount-wrapper__promotionsButton {
-    width: 180px;
-    font-size: 1.3em;
-    background-color: $nitro-blue-color;
-    color: $white-color;
-    padding: 20px;
-}
+    &__promotionsButton {
+        width: 180px;
+        font-size: 1.3em;
+        background-color: $nitro-blue-color;
+        color: $white-color;
+        padding: 20px;
+    }
 
-.discount-wrapper__surrounding-border {
-    position: relative;
-    width: 180px;
-    height: 72px;
-    left: 10px;
-    bottom: 80px;
-    border: 2px $gradiant-color solid;
-}
+    &__surrounding-border {
+        position: relative;
+        width: 180px;
+        height: 72px;
+        left: 10px;
+        bottom: 80px;
+        border: 2px $gradiant-color solid;
+    }
 
-.discount-wrapper__promotionsBackgroundImage {
-    width: 400px;
-    padding: 20px;
-    margin: 20px;
-    background-image: url(../assets/coldbrewbackground.png);
-    background-position: center;
-    background-size: cover;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    &__promotionsBackgroundImage {
+        width: 400px;
+        padding: 20px;
+        margin: 20px;
+        background-image: url(../assets/coldbrewbackground.png);
+        background-position: center;
+        background-size: cover;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-.discount-wrapper__bgsurrounding-border {
-    position: relative;
-    width: 400px;
-    height: 350px;
-    left: -390px;
-    top: -20px;
-    bottom: 50px;
-    border: 5px $nitro-blue-color solid
-}
+    &__bgsurrounding-border {
+        position: relative;
+        width: 400px;
+        height: 350px;
+        left: -390px;
+        top: -20px;
+        bottom: 50px;
+        border: 5px $nitro-blue-color solid;
+    }
 
-/*Discount Banner Styles*/
-#discount-wrapper__discountBanner {
-    width: 90%;
-    height: fit-content;
-    background-color: $gradiant-color;
-    padding: 20px;
-    margin-top: 150px;
-    margin-bottom: 150px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
+    &__discountBanner {
+        width: 90%;
+        height: fit-content;
+        background-color: $gradiant-color;
+        padding: 20px;
+        margin-top: 150px;
+        margin-bottom: 150px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
 
-/*Discount Text Styles*/
-#discount-wrapper__discount-text {
-    font-size: 3em;
-    color: $white-color;
-}
+    &__discount-text {
+        font-size: 3em;
+        color: $white-color;
+    }
 
-/*Discount Text - Special Case*/
-#discount-wrapper__bolded-text {
-    font-weight: bold;
+    &__bolded-text {
+        font-weight: bold;
+    }
 }
 
 /*Footer Section Styles*/
@@ -300,45 +260,31 @@ CSS Concept Used: Relative Units, CSS Display, CSS Box Model, CSS Flexbox and BE
     background-size: 120px;
     background-position-y: 5%;
     background-position-x: -3%;
-}
 
-/*Footer Content Styles*/
-.footer-section__footer-content {
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
-    justify-content: space-evenly;
-    width: 100%;
-    margin-left: 10px;
-}
+    &__footer-content {
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-evenly;
+        width: 100%;
+        margin-left: 10px;
+    }
 
-/*Footer Cards Styles*/
-.footer-section__footer-card {
-    width: 250px;
-    margin: 20px;
-}
+    &__footer-card {
+        width: 250px;
+        margin: 20px;
+    }
 
-.social-card {
-    background-image: linear-gradient(rgba(255, 240, 237, 0.9), rgba(255, 240, 237, 0.9)), url("../assets/coffee-beans-logo-and-footer.svg");
-    background-repeat: no-repeat;
-    background-size: 120px;
-    background-position-y: 50px;
-    background-position-x: 200px;
-}
+    &__footer-header {
+        font-size: 2em;
+        font-weight: 300;
+        margin: 20px;
+    }
 
-/*Footer Titles Styles*/
-.footer-section_footer-header {
-    font-size: 2em;
-    font-weight: 300;
-    margin: 20px;
-}
+    &__bolded-text {
+        font-weight: bold;
+    }
 
-/*Footer Special Case Bolded Text Styles*/
-#footer-section__bolded-text {
-    font-weight: bold;
-}
-
-/*Footer Section Icons Styles*/
-.footer-section_icons {
-    width: 3.5em;
+    &__icons {
+        width: 3.5em;
+    }
 }
